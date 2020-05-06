@@ -1,5 +1,14 @@
 import React from "react"
+import Header from "../components/header"
 
 export default function Home() {
-  return <h1>Hello World!</h1>
+  return (
+    <div style={{ color: `purple` }}>
+      <Header 
+        headerText="Some other headerText"
+      />
+      <p>What a world.</p>
+      <img src="https://source.unsplash.com/random/400x200" alt="" />
+    </div>
+  );
 }
