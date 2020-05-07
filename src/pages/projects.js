@@ -12,7 +12,7 @@ export default function Projects(props) {
         flex-wrap: wrap;
         justify-content: center;
         width: 100vw;
-        
+        margin-top: 5rem;
     `;
 
     const Div = styled.div`
