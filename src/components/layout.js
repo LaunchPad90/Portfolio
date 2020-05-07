@@ -1,12 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import Header from "./header";
 
-const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <Link to={props.to}>{props.children}</Link>
-    </li>
-)
+
 
 export default function Layout({ children }) {
 
@@ -19,32 +16,9 @@ export default function Layout({ children }) {
         width: 100vw;
     `;
 
-    const Header = styled.header`
-        margin-bottom: 1.5rem;
-        
-    `;
-
-    const Ul = styled.ul`
-        list-style: none;
-        font-size: 2rem;
-        text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    `;
-
   return (
     <LayoutDiv>
-        <Header>
-            <Ul>
-                <Link to="/" style={{ marginRight: `1rem` }}>
-                    <h3 style={{ display: `inline` }}>Jacob Hickey</h3>
-                </Link>
-                <ListLink to="/">Home</ListLink>
-                <ListLink to="/about/">About</ListLink>
-                <ListLink to="/projects/">Projects</ListLink>
-            </Ul>
-        </Header>
+        <Header />
         {children}
     </LayoutDiv>
   )

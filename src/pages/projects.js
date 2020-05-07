@@ -1,34 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import Card from "../components/card"
 import styled from "styled-components"
+import projectData from "../data/project-data"
 
-export default function Projects() {
+export default function Projects(props) {
 
     const CardContainer = styled.div`
-        margin: 1rem;
         display: flex;
         flex-direction: row;
-        width: 100rem;
-        height: 100rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        
+    `;
+
+    const Div = styled.div`
+        background-color: grey;
     `;
 
     return (
+        <Div>
         <Layout>
-           
-                <Header headerText="Projects page" />
-                <CardContainer>
-                    <Card 
-                        projectTitle="Slot Machine"
-                        projectContent="Content"
-                    />
-                    <Card 
-                        projectTitle="Smack-Talk"
-                    />
-                </CardContainer>
-            
+            <CardContainer>
+                {projectData.map(project => (
+                    <div key={project.title}>
+                        <Card 
+                            cardImg={project.gif}
+                            projectTitle={project.title}
+                            projectContent={project.content}
+                        />
+                    </div>
+                ))}
+            </CardContainer>
         </Layout>
+        </Div>
     )
 }
