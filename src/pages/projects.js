@@ -15,12 +15,9 @@ export default function Projects(props) {
         margin-top: 5rem;
     `;
 
-    const Div = styled.div`
-        background-color: grey;
-    `;
+  
 
     return (
-        <Div>
         <Layout>
             <CardContainer>
                 {projectData.map(project => (
@@ -34,6 +31,5 @@ export default function Projects(props) {
                 ))}
             </CardContainer>
         </Layout>
-        </Div>
     )
 }
