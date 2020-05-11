@@ -3,12 +3,11 @@ import styled from "styled-components"
 
 export default function Card(props) {
 
-    const CardContainer = styled.div`
+    const CardBox = styled.div`
         width: 400px;
         height: 500px;
         perspective: 1000px;
         margin: 1rem;
-       
     `;
 
     const CardFront = styled.div`
@@ -18,10 +17,10 @@ export default function Card(props) {
         align-items: center;
         height: 100%;
         width: 100%;
+
     `;
 
     const CardBack = styled.div`
-        background: rgb(121, 179, 255);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -46,7 +45,7 @@ export default function Card(props) {
             height: 100%;
         }
 
-        ${CardContainer}:hover, &:hover {
+        ${CardBox}:hover, &:hover {
             transform: rotateY(180deg);
         }
     `;
@@ -67,7 +66,7 @@ export default function Card(props) {
     `;
 
     return (
-        <CardContainer>
+        <CardBox>
             <Card>
                 <CardFront>
                     <CardTitle>{props.projectTitle}</CardTitle>
@@ -77,6 +76,6 @@ export default function Card(props) {
                     <CardImg src={props.cardImg}/>
                 </CardBack>
             </Card>
-        </CardContainer>
+        </CardBox>
     )
 }

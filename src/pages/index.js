@@ -1,9 +1,13 @@
 import React from "react"
-import Layout from "../components/layout";
+import { Link } from "gatsby"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
+import img from "../images/skate-hero.jpeg"
+import Button from "../components/button"
 
 import "../styles/global.css"
+import Layout from "../components/layout"
+
 
 
 export default function Home() {
@@ -38,21 +42,21 @@ export default function Home() {
         opacity: 1;
         transform: translate(0);
     }
-`;
+  `;
 
-  const Hero = styled.header`
+  const Hero = styled.div`
     position: relative;
-    height: 95vh;
-    margin-top: 3.5rem;
+    height: 100vh;
+
     background: linear-gradient(
         to left bottom, 
         #6facd5af, 
         #283db4b7), 
-        url('../img/hero-skate.jpeg'
+        url(${img}
     );
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 90vh);
   `;
 
   const HeroTextBox = styled.div`
@@ -89,14 +93,17 @@ export default function Home() {
 
   return (
     <Layout>
-         <Hero>
-          <HeroTextBox>
-            <HeroPrimary>
-              <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
-              <HeroPrimarySub>Web Developer</HeroPrimarySub>
-            </HeroPrimary>
-          </HeroTextBox>
-         </Hero>
+      <Hero>
+        <HeroTextBox>
+          <HeroPrimary>
+            <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
+            <HeroPrimarySub>Web Developer</HeroPrimarySub>
+          </HeroPrimary>
+          <Button>
+            <Link style={{textDecoration: `none`, color:`#283db4b7`}} to="/projects/">View Projects</Link>
+          </Button>
+        </HeroTextBox>
+      </Hero>
     </Layout>
   );
 }
