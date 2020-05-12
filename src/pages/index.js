@@ -7,6 +7,7 @@ import Button from "../components/button"
 
 import "../styles/global.css"
 import Layout from "../components/layout"
+import Projects from "./projects"
 
 
 
@@ -47,7 +48,6 @@ export default function Home() {
   const Hero = styled.div`
     position: relative;
     height: 100vh;
-
     background: linear-gradient(
         to left bottom, 
         #6facd5af, 
@@ -56,7 +56,8 @@ export default function Home() {
     );
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 90vh);
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 92vh);
   `;
 
   const HeroTextBox = styled.div`
@@ -92,6 +93,7 @@ export default function Home() {
   `;
 
   return (
+    <div>
     <Layout>
       <Hero>
         <HeroTextBox>
@@ -105,5 +107,7 @@ export default function Home() {
         </HeroTextBox>
       </Hero>
     </Layout>
+    <Projects/>
+    </div>
   );
 }

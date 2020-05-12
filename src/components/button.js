@@ -22,7 +22,7 @@ export default function Button({children }) {
 
     const ProjectsBtn = styled.button`
         background-color: #fff;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 2rem;
         display: inline-block;
         border-radius: 100px;
         animation: ${moveInBtn} .5s ease-out .75s;

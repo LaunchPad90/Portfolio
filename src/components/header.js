@@ -24,9 +24,7 @@ export default function Header() {
 
   return(
       <NavLinks>
-          <ListLink to="/">
-              <h3 style={{ display: `inline` }}>Jacob Hickey</h3>
-          </ListLink>
+          <ListLink to="/">Home</ListLink>
           <ListLink to="/resume/">Resume</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
       </NavLinks>
