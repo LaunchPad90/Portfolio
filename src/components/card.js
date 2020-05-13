@@ -9,6 +9,7 @@ export default function Card(props) {
         perspective: 1000px;
         margin: 2rem;
         text-align: center;
+
     `;
 
     const CardFront = styled.div`
@@ -30,6 +31,8 @@ export default function Card(props) {
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
+        font-family: Roboto Condensed, sans-serif;
+        
     `;
 
     const Card = styled.div `
@@ -39,9 +42,7 @@ export default function Card(props) {
         transition: transform 1s;
         transform-style: preserve-3d;
         box-shadow: 20px 20px 25px rgba(50,50,50,.2);
-
-
-       
+        
 
         ${CardFront}, ${CardBack} {
             position: absolute;
@@ -50,7 +51,12 @@ export default function Card(props) {
             height: 100%;
         }
 
-        ${CardBox}:hover, &:hover {
+        ${CardBox}:hover &:hover {
+            cursor: pointer;
+            
+        }
+
+        ${CardBox}.flipped, &.flipped {
             transform: rotateY(180deg);
             
         }
@@ -102,10 +108,24 @@ export default function Card(props) {
         height: 100%;
 
     `;
+
+    const Buttons = styled.div`
+        display: inline-block;
+        margin: 1rem;
+    `;
+
+    const A = styled.a`
+        margin: 1rem;
+        text-decoration: none;
+    `;
+
+    const Flipped = (e) => {
+        e.currentTarget.classList.toggle('flipped');
+    }
     
     return (
         <CardBox>
-            <Card>
+            <Card onClick={Flipped}>
                 <CardFront>
                     <CardTitle>{props.projectTitle}</CardTitle>
                     <ContentList>
@@ -115,8 +135,13 @@ export default function Card(props) {
                     </ContentList>
                 </CardFront>
                 <CardBack>
-                    <CardImg src={props.projectGif}/>
+                    <CardImg src="#"/>
                     <CardContent>{props.projectContent}</CardContent>
+                    <Buttons>
+                        <button><A href={props.projectGif} target="blank">View Demo</A></button>
+                        <button><A href={props.hosted} target="blank">View Hosted</A></button>
+                        <button><A href={props.gitHub} target="blank">View Code</A></button>
+                    </Buttons>
                 </CardBack>
             </Card>
         </CardBox>

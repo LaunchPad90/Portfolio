@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/launchpad/Code/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/launchpad/Code/portfolio/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":["roboto","source sans serif:300,400,400i,700"],"display":"swap"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

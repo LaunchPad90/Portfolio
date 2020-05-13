@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import Card from "../components/card"
 import styled from "styled-components"
 import projectData from "../data/project-data"
@@ -24,7 +23,7 @@ export default function Projects(props) {
             to left bottom, 
             #b8b9b8bd, 
             #424444af), 
-            url('https://images.unsplash.com/photo-1550503990-2b7709fa6b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+
         );
         background-position: top;
         background-attachment: fixed;
@@ -47,6 +46,8 @@ export default function Projects(props) {
                             projectGif={project.gif}
                             color1={project.color1}
                             color2={project.color2}
+                            gitHub={project.gitHub}
+                            hosted={project.hosted}
                         />
                     </div>
                 ))}

@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { Link } from "gatsby"
 
 
@@ -21,6 +21,7 @@ export default function Header() {
     margin-right: 1rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
+    font-family: 'Roboto Condensed', sans-serif;
 
     &:hover {
       background: rgb(61, 116, 235);

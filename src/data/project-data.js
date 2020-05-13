@@ -8,7 +8,9 @@ export default [
         image: "https://i.imgur.com/rUW97OE.png",
         gif: "https://i.imgur.com/vZdMk5Y.gif",
         color1: "rgba(72, 103, 228, 0.4)",
-        color2: "rgba(27, 60, 191, 0.8)"
+        color2: "rgba(27, 60, 191, 0.8)",
+        gitHub: "https://github.com/LaunchPad90/TombstoneSlotMachine",
+        hosted: ""
     },
 
     {
@@ -20,7 +22,9 @@ export default [
         image: "https://i.imgur.com/8BT1PI6.png",
         gif: "",
         color1: "rgba(150, 0, 200, 0.4)",
-        color2: "rgba(124, 59, 220, 0.8)"
+        color2: "rgba(124, 59, 220, 0.8)",
+        gitHub: "https://github.com/LaunchPad90/Smack-Talk",
+        hosted: ""
     },
 
     {
@@ -32,7 +36,9 @@ export default [
         image: "https://i.imgur.com/uKEZ0Hw.png",
         gif: "",
         color1: "rgba(255, 0, 12, 0.4)",
-        color2: "rgba(255, 168, 96, 0.8)"
+        color2: "rgba(255, 168, 96, 0.8)",
+        gitHub: "https://github.com/LaunchPad90/bad_app_app",
+        hosted: ""
     },
 
     {
@@ -44,6 +50,8 @@ export default [
         image: "https://i.imgur.com/k0E4asB.png",
         gif: "",
         color1: "rgba(85, 197, 122, 0.4)",
-        color2: "rgba(21, 157, 62, 0.8)"
+        color2: "rgba(21, 157, 62, 0.8)",
+        gitHub: "https://github.com/LaunchPad90/FORE-card",
+        hosted: ""
     }
 ]

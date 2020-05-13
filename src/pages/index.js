@@ -94,7 +94,7 @@ export default function Home() {
   `;
 
   const ProjectBtn = styled(Link)`
-    font-family: Courier New, Courier, monospace;
+    font-family: Roboto Condensed, sans serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #283db4b7;
@@ -115,8 +115,8 @@ export default function Home() {
           </HeroTextBox>
         </Hero>
       </Layout>
-      <About />
       <Projects />
+      <About />
     </div>
   );
 }
