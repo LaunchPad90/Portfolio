@@ -4,7 +4,7 @@ export default [
         tech1: "HTML",
         tech2: "CSS",
         tech3: "Javascript",
-        content: "This was my first project built at General Assembly. I built this project using Vanilla JavaScript, basic HTML and CSS. This project was very challenging at the time, i worked on it tirelessly. Although the design didnt quite come to fruition I was happy with the logic.",
+        content: "Simple browser game. This was my first attempt at writing javascript logic for a game. This project was completed in 1 week and is deployed on Github pages.",
         image: "https://i.imgur.com/rUW97OE.png",
         gif: "https://i.imgur.com/vZdMk5Y.gif",
         color1: "rgba(72, 103, 228, 0.4)",

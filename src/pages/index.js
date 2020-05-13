@@ -8,6 +8,7 @@ import Button from "../components/button"
 import "../styles/global.css"
 import Layout from "../components/layout"
 import Projects from "./projects"
+import About from "../components/about"
 
 
 
@@ -57,7 +58,7 @@ export default function Home() {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 92vh);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 85%);
   `;
 
   const HeroTextBox = styled.div`
@@ -102,11 +103,12 @@ export default function Home() {
             <HeroPrimarySub>Web Developer</HeroPrimarySub>
           </HeroPrimary>
           <Button>
-            <Link style={{textDecoration: `none`, color:`#283db4b7`}} to="/projects/">View Projects</Link>
+            <Link style={{ fontFamily: `font-family: Courier New, Courier, monospace;`, textTransform: `uppercase`, textDecoration: `none`, color:`#283db4b7`}} to="/projects/">View Projects</Link>
           </Button>
         </HeroTextBox>
       </Hero>
     </Layout>
+    <About />
     <Projects/>
     </div>
   );

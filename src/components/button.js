@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { keyframes } from "styled-components"
 
-export default function Button({children }) {
+export default function Button({ children }) {
     
     const moveInBtn = keyframes`
     0% {
