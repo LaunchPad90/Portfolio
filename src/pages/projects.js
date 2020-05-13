@@ -33,7 +33,6 @@ export default function Projects(props) {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
     `;
     return (
-            <Layout>
         <ProjectPage>
             <CardContainer>
                 {projectData.map(project => (
@@ -53,6 +52,5 @@ export default function Projects(props) {
                 ))}
             </CardContainer>
         </ProjectPage>
-            </Layout>
     )
 }

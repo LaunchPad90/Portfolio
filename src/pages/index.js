@@ -102,21 +102,21 @@ export default function Home() {
 
   return (
     <div>
-    <Layout>
-      <Hero>
-        <HeroTextBox>
-          <HeroPrimary>
-            <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
-            <HeroPrimarySub>Web Developer</HeroPrimarySub>
-          </HeroPrimary>
-          <Button>
-            <ProjectBtn to="/projects/">View Projects</ProjectBtn>
-          </Button>
-        </HeroTextBox>
-      </Hero>
-    </Layout>
-    <About />
-    <Projects/>
+      <Layout>
+        <Hero>
+          <HeroTextBox>
+            <HeroPrimary>
+              <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
+              <HeroPrimarySub>Web Developer</HeroPrimarySub>
+            </HeroPrimary>
+            <Button>
+              <ProjectBtn to="/projects/">View Projects</ProjectBtn>
+            </Button>
+          </HeroTextBox>
+        </Hero>
+      </Layout>
+      <About />
+      <Projects />
     </div>
   );
 }

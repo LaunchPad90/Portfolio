@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { Link } from "gatsby"
 
 
@@ -13,6 +13,7 @@ export default function Header() {
     justify-content: flex-start;
     align-items: baseline;
     padding: 1rem;
+    width: 100%;
    `;
 
   const ListLink = styled(Link)`
@@ -29,7 +30,7 @@ export default function Header() {
 
   return(
       <NavLinks>
-          <ListLink to="/">Home</ListLink>
+          <ListLink className="name" to="/">Home</ListLink>
           <ListLink to="/resume/">Resume</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
       </NavLinks>
