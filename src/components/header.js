@@ -13,13 +13,18 @@ export default function Header() {
     justify-content: flex-start;
     align-items: baseline;
     padding: 1rem;
-`;
+   `;
 
   const ListLink = styled(Link)`
     display: inline-block;
     margin-right: 1rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
+
+    &:hover {
+      background: rgb(61, 116, 235);
+      color: white;
+    }
   `;
 
   return(

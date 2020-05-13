@@ -74,7 +74,7 @@ export default function Card(props) {
         background-position: top;
         background-size: cover;
         position: relative;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
     `;
 
     const CardContent = styled.div`

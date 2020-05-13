@@ -58,7 +58,7 @@ export default function Home() {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   `;
 
   const HeroTextBox = styled.div`
@@ -93,6 +93,13 @@ export default function Home() {
     animation: ${moveInRight} 1s ease-out;
   `;
 
+  const ProjectBtn = styled(Link)`
+    font-family: Courier New, Courier, monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #283db4b7;
+  `;
+
   return (
     <div>
     <Layout>
@@ -103,7 +110,7 @@ export default function Home() {
             <HeroPrimarySub>Web Developer</HeroPrimarySub>
           </HeroPrimary>
           <Button>
-            <Link style={{ fontFamily: `font-family: Courier New, Courier, monospace;`, textTransform: `uppercase`, textDecoration: `none`, color:`#283db4b7`}} to="/projects/">View Projects</Link>
+            <ProjectBtn to="/projects/">View Projects</ProjectBtn>
           </Button>
         </HeroTextBox>
       </Hero>

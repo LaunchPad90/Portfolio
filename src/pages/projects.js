@@ -20,16 +20,21 @@ export default function Projects(props) {
     const ProjectPage = styled.div`
         width: 100vw;
         height: 100vh;
-
+        background: linear-gradient(
+            to left bottom, 
+            #b8b9b8bd, 
+            #424444af), 
+            url('https://images.unsplash.com/photo-1550503990-2b7709fa6b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+        );
         background-position: top;
         background-attachment: fixed;
         no-repeat center;
         background-size: cover;
-
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
     `;
     return (
-        <ProjectPage>
             <Layout>
+        <ProjectPage>
             <CardContainer>
                 {projectData.map(project => (
                     <div key={project.title}>
@@ -47,7 +52,7 @@ export default function Projects(props) {
                     </div>
                 ))}
             </CardContainer>
-            </Layout>
         </ProjectPage>
+            </Layout>
     )
 }
