@@ -94,7 +94,7 @@ export default function Home() {
   `;
 
   const ProjectBtn = styled(Link)`
-    font-family: Roboto Condensed, sans serif;
+    font-family: Roboto, sans serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #283db4b7;

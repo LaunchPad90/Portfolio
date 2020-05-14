@@ -58,7 +58,7 @@ export default function Card(props) {
 
         ${CardBox}.flipped, &.flipped {
             transform: rotateY(180deg);
-            
+            box-shadow: -20px 20px 25px rgba(50,50,50,.2);
         }
     `;
 
