@@ -21,9 +21,7 @@ export default function Contact(props) {
         width: 70vw;
         box-shadow: 20px 20px 20px rgba(100, 100, 100, 0.8);
 
-        ${media.l`
-            width: 100%;
-        `}
+       
 
         ${media.m`
             flex-direction: column;

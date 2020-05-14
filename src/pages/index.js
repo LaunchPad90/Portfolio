@@ -61,12 +61,7 @@ export default function Home() {
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-    ${media.s`
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    `}
+   
   `;
 
   const HeroTextBox = styled.div`
@@ -83,7 +78,7 @@ export default function Home() {
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   `;
 
   const HeroPrimaryMain = styled.span`
@@ -95,7 +90,8 @@ export default function Home() {
 
     ${media.m`
       font-size: 2rem;
-      letter-spacing: .5rem;
+      letter-spacing: .2rem;
+      width: 100vw;
     `}
   `;
 
@@ -108,7 +104,8 @@ export default function Home() {
 
     ${media.m`
       font-size: 2rem;
-      letter-spacing: .5rem;
+      letter-spacing: .2rem;
+      width: 100vw;
     `}
   `;
 
@@ -119,8 +116,8 @@ export default function Home() {
     color: #283db4b7;
 
     ${media.m`
-      font-size: 1rem;
-      letter-spacing: .5rem;
+      font-size: 1.4rem;
+      letter-spacing: .2rem;
     `}
   `;
 

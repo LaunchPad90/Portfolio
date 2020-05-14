@@ -11,7 +11,7 @@ export default function Card(props) {
         text-align: center;
 
         ${media.l`
-            height: 20rem;
+            height: 25rem;
             width: 20rem;
         `}
     `;

@@ -24,9 +24,19 @@ export default function Projects(props) {
             #424444af), 
         );
     `;
+
+    const ProjectHeader = styled.h1`
+        font-size: 3rem;
+        text-align: center;
+
+        ${media.m`
+            font-size: 2rem;
+        `}
+    `;
+
     return (
         <ProjectPage>
-            <h1>Projects</h1>
+            <ProjectHeader>Projects</ProjectHeader>
             <CardContainer>
                 {projectData.map(project => (
                     <div key={project.title}>
