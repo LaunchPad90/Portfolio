@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import media from "../styles/media"
 
 
 export default function Header() {
@@ -14,6 +15,12 @@ export default function Header() {
     align-items: baseline;
     padding: 1rem;
     width: 100%;
+
+    ${media.m`
+
+      justify-content: center;
+
+    `}
    `;
 
   const ListLink = styled(Link)`
@@ -22,18 +29,13 @@ export default function Header() {
     text-decoration: none;
     color: rgb(61, 116, 235);
     font-family: 'Roboto Condensed', sans-serif;
-
-    &:hover {
-      background: rgb(61, 116, 235);
-      color: white;
-    }
   `;
 
   return(
       <NavLinks>
           <ListLink className="name" to="/">Home</ListLink>
           <ListLink to="/resume/">Resume</ListLink>
-          <ListLink to="/projects/">Projects</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
       </NavLinks>
   )
 }

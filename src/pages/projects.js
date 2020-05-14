@@ -2,6 +2,7 @@ import React from "react"
 import Card from "../components/card"
 import styled from "styled-components"
 import projectData from "../data/project-data"
+import media from "../styles/media"
 
 export default function Projects(props) {
 
@@ -11,28 +12,21 @@ export default function Projects(props) {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 100vh;
         
     `;
 
     const ProjectPage = styled.div`
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: linear-gradient(
             to left bottom, 
             #b8b9b8bd, 
             #424444af), 
-
         );
-        background-position: top;
-        background-attachment: fixed;
-        no-repeat center;
-        background-size: cover;
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
     `;
     return (
         <ProjectPage>
+            <h1>Projects</h1>
             <CardContainer>
                 {projectData.map(project => (
                     <div key={project.title}>

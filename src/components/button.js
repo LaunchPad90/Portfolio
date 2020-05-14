@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { keyframes } from "styled-components"
+import media from "../styles/media"
 
 export default function Button({ children }) {
     
@@ -28,6 +29,10 @@ export default function Button({ children }) {
         animation: ${moveInBtn} .5s ease-out .75s;
         animation-fill-mode: backwards;
         font-size: 2rem;
+
+        ${media.m`
+            padding: .5rem 1rem;
+        `}
     `;
 
     return (

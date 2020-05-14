@@ -9,6 +9,7 @@ import "../styles/global.css"
 import Layout from "../components/layout"
 import Projects from "./projects"
 import About from "../components/about"
+import media from "../styles/media"
 
 
 
@@ -59,6 +60,13 @@ export default function Home() {
     background-position: top;
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    ${media.s`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    `}
   `;
 
   const HeroTextBox = styled.div`
@@ -67,6 +75,7 @@ export default function Home() {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    
   `;
 
   const HeroPrimary = styled.h1`
@@ -83,6 +92,11 @@ export default function Home() {
     font-weight: 400;
     letter-spacing: 2.5rem;
     animation: ${moveInLeft} 1s ease-out;
+
+    ${media.m`
+      font-size: 2rem;
+      letter-spacing: .5rem;
+    `}
   `;
 
   const HeroPrimarySub = styled.span`
@@ -91,6 +105,11 @@ export default function Home() {
     font-weight: 600;
     letter-spacing: 1rem;
     animation: ${moveInRight} 1s ease-out;
+
+    ${media.m`
+      font-size: 2rem;
+      letter-spacing: .5rem;
+    `}
   `;
 
   const ProjectBtn = styled(Link)`
@@ -98,6 +117,11 @@ export default function Home() {
     text-transform: uppercase;
     text-decoration: none;
     color: #283db4b7;
+
+    ${media.m`
+      font-size: 1rem;
+      letter-spacing: .5rem;
+    `}
   `;
 
   return (

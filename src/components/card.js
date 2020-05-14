@@ -1,15 +1,19 @@
 import React from "react"
 import styled from "styled-components"
-
+import media from "../styles/media"
 export default function Card(props) {
 
     const CardBox = styled.div`
         width: 28rem;;
-        height: 50rem;
+        height: 38rem;
         perspective: 1000px;
         margin: 2rem;
         text-align: center;
 
+        ${media.l`
+            height: 20rem;
+            width: 20rem;
+        `}
     `;
 
     const CardFront = styled.div`
@@ -22,12 +26,12 @@ export default function Card(props) {
     `;
 
     const CardBack = styled.div`
-        background: rgba(245, 245, 245, 0.8);
+        background: white;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
@@ -62,11 +66,11 @@ export default function Card(props) {
         }
     `;
 
-    const CardTitle = styled.h1`
+    const CardTitle = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
         width: 100%;
         height: 40%;
         background: linear-gradient(
@@ -76,17 +80,22 @@ export default function Card(props) {
             url(${props.projectImage}
             
         );
-        color: #fca;
+        color: white;
         background-position: top;
         background-size: cover;
         position: relative;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        ${media.l`
+            font-size: 2rem;
+        `}
     `;
 
     const CardContent = styled.div`
         width: 100%;
         font-size: 1.8rem;
         padding: 1rem;
+        justify-self: flex-start;
     `;
 
     const ContentList = styled.ul`
@@ -101,17 +110,22 @@ export default function Card(props) {
         &:not(:last-child) {
             border-bottom: 1px solid grey;
         }
+
+        ${media.l`
+            font-size: 1.5rem;
+        `}
     `;
 
-    const CardImg = styled.img`
-        width: 100%;
-        height: 100%;
-
-    `;
+    // const CardImg = styled.video`
+    //     width: 100%;
+    //     height: 100%;
+    // `;
 
     const Buttons = styled.div`
         display: inline-block;
         margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
     `;
 
     const A = styled.a`
@@ -128,6 +142,7 @@ export default function Card(props) {
             <Card onClick={Flipped}>
                 <CardFront>
                     <CardTitle>{props.projectTitle}</CardTitle>
+                    {/* <CardImg controls type="video/mp4" src={props.projectGif} /> */}
                     <ContentList>
                         <ListItem>{props.projectTech1}</ListItem>
                         <ListItem>{props.projectTech2}</ListItem>
@@ -135,7 +150,6 @@ export default function Card(props) {
                     </ContentList>
                 </CardFront>
                 <CardBack>
-                    <CardImg src="#"/>
                     <CardContent>{props.projectContent}</CardContent>
                     <Buttons>
                         <button><A href={props.projectGif} target="blank">View Demo</A></button>

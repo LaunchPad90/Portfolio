@@ -1,4 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    title: `Jacob Hickey Portfolio`,
+    description: `A collection of my projects`,
+    author: `Jacob Hickey`,
+  },
+
     plugins: [
       {
         resolve: `gatsby-plugin-styled-components`,
