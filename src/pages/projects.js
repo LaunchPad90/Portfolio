@@ -12,6 +12,7 @@ export default function Projects(props) {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        height: 100%;
         
     `;
 

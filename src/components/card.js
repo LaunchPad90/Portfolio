@@ -39,7 +39,6 @@ export default function Card(props) {
         height: 100%;
         transform: rotateY(180deg);
         font-family: Roboto Condensed, sans-serif;
-        
     `;
 
     const Card = styled.div `
@@ -158,6 +157,7 @@ export default function Card(props) {
                         {/* <button><A href={props.projectGif} target="blank">View Demo</A></button> */}
                         <GifModal 
                             gif={props.projectGif}
+                            title={props.projectTitle}
                         />
                         <button><A href={props.hosted} target="blank">View Hosted</A></button>
                         <button><A href={props.gitHub} target="blank">View Code</A></button>

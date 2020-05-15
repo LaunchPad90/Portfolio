@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -40,7 +39,7 @@ function GifModal(props){
           onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel={props.title}
         >
 
           <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2>

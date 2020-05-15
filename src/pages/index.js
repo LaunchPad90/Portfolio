@@ -86,6 +86,7 @@ export default function Home() {
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 2.5rem;
+    margin-bottom: 2rem;
     animation: ${moveInLeft} 1s ease-out;
 
     ${media.m`
@@ -128,7 +129,8 @@ export default function Home() {
           <HeroTextBox>
             <HeroPrimary>
               <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
-              <HeroPrimarySub>Web Developer</HeroPrimarySub>
+              <HeroPrimarySub>denver based developer</HeroPrimarySub> 
+              <HeroPrimarySub>focused on the front-end</HeroPrimarySub> 
             </HeroPrimary>
             <Button>
               <ProjectBtn to="/projects/">View Projects</ProjectBtn>

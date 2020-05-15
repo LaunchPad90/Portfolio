@@ -8,26 +8,12 @@ import media from "../styles/media"
 export default function About(props) {
 
     const AboutContainer = styled.div`
-        height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;;
-        font-family: 'Roboto Condensed, sans serif, monospace';
+        font-family: Roboto, sans serif, monospace;
         font-size: 3rem;
-        background: linear-gradient(
-            to left bottom, 
-            #6facd5af, 
-            #283db4b7), 
-            url(${img}
-        );
-        background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-
+                
         ${media.xl`
-            height: 100vh;
+            height: 100%;
         `}
 
         ${media.l`
@@ -36,11 +22,10 @@ export default function About(props) {
         `}
     `;
 
-    const AboutTitle = styled.div`
+    const AboutTitle = styled.h1`
         text-align: center;
         font-size: 3rem;
-        justify-self: flex-start;
-        color: white;
+
 
         ${media.m`
             font-size: 2rem;
@@ -56,27 +41,46 @@ export default function About(props) {
     `;
 
     const AboutCardContainer = styled.div`
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        background: linear-gradient(
+            to left bottom, 
+            #6facd5af, 
+            #283db4b7), 
+            url(${img}
+        );
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        ${media.xl`
+        `}
 
         ${media.m`
-            height: 70vh;
+            height: 100vh;
+            clip-path: none;
         `}
     `;
 
     const AboutCard = styled.div`
         height: 25rem;
         width: 25rem;
-        margin: 1.7rem;
+        margin: 0 auto;
         background: white;
         text-align: center;
         box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.7);
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         justify-content: center;
+        font-family: Roboto condensed, sans serif;
+
+        &.basketball {
+            flex-grow: 3;
+        }
 
         ${media.l`
             height: 20rem;
@@ -87,6 +91,7 @@ export default function About(props) {
             height: 15rem;
             width: 13rem;
             margin: 0.3rem;
+            flex-grow: 2;
         `}
 
         ${media.s`
@@ -120,7 +125,7 @@ export default function About(props) {
 
     return (
         <AboutContainer>
-            <AboutTitle>A little bit about myself</AboutTitle>
+            <AboutTitle>About Me</AboutTitle>
             <AboutMe></AboutMe>
             <AboutCardContainer>
                 <AboutCard>
@@ -131,11 +136,13 @@ export default function About(props) {
                     <AboutCardTitle>Skateboarding</AboutCardTitle>
                     <AboutContent></AboutContent>
                 </AboutCard>
+            </AboutCardContainer>
+            <AboutCardContainer>
                 <AboutCard>
                     <AboutCardTitle>Cooking</AboutCardTitle>
                     <AboutContent></AboutContent>
                 </AboutCard>
-                <AboutCard>
+                <AboutCard className="basketball">
                     <AboutCardTitle>Basketball</AboutCardTitle>
                     <AboutContent></AboutContent>
                 </AboutCard>

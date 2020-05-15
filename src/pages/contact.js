@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import media from "../styles/media"
 
+import myPhoto from "../images/aboutMeSEI.jpg"
+
 export default function Contact(props) {
 
     const ContactPage = styled.div`
@@ -35,7 +37,8 @@ export default function Contact(props) {
         justify-content: center;
         align-items: center;
         border: 5px solid yellow;
-        width: 35%;
+        width: 45%;
+        background: rgba(197, 208, 0, 0.5);
 
         ${media.m`
             height: 100%;
@@ -45,10 +48,9 @@ export default function Contact(props) {
     `;
 
     const Photo = styled.img`
-        border-radius: 50%;
-        height: 40%;
-        width: 80%;
-        border: 3px solid black;
+        border: 6px solid white;
+        height: 100%;
+        width: 100%;
 
         ${media.m`
             height: 80%;
@@ -58,7 +60,7 @@ export default function Contact(props) {
 
     const PersonalInfo = styled.div`
         border: 3px solid orange;
-        height: 60%;
+        height: 40%;
         width: 100%;
 
         ${media.m`
@@ -73,7 +75,7 @@ export default function Contact(props) {
         justify-content: center;
         align-items: center;
         border: 5px solid purple;
-        width: 65%;
+        width: 55%;
 
         ${media.m`
             height: 100%;
@@ -85,7 +87,7 @@ export default function Contact(props) {
             <ContactPage>
                 <ContactCard>
                     <CardLeft>
-                        <Photo />
+                        <Photo src={myPhoto}/>
                         <PersonalInfo />
                     </CardLeft>
                     <CardRight></CardRight>
