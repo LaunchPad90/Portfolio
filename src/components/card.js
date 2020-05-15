@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
+import GifModal from "../components/modal"
+
+
 export default function Card(props) {
 
     const CardBox = styled.div`
@@ -152,7 +155,10 @@ export default function Card(props) {
                 <CardBack>
                     <CardContent>{props.projectContent}</CardContent>
                     <Buttons>
-                        <button><A href={props.projectGif} target="blank">View Demo</A></button>
+                        {/* <button><A href={props.projectGif} target="blank">View Demo</A></button> */}
+                        <GifModal 
+                            gif={props.projectGif}
+                        />
                         <button><A href={props.hosted} target="blank">View Hosted</A></button>
                         <button><A href={props.gitHub} target="blank">View Code</A></button>
                     </Buttons>

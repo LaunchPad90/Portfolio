@@ -3,6 +3,7 @@ import steak from "../images/steak.png"
 import badappapp from "../images/badappapp.png"
 import golfImg from "../images/forecard-image.png"
 import slotGif from "../images/slotGif.mp4"
+import smackTalkGif from "../images/smack-talk-gif.mp4"
 
 export default [
     {
@@ -26,7 +27,7 @@ export default [
         tech3: "MongoDB",
         content: "Do you love cooking? Do you hate viewing recipes on blog sites? This is the webapp for you. Enough talking, lets cook.",
         image: `${steak}`,
-        gif: "",
+        gif: `${smackTalkGif}`,
         color1: "rgba(150, 0, 200, 0.4)",
         color2: "rgba(124, 59, 220, 0.8)",
         gitHub: "https://github.com/LaunchPad90/Smack-Talk",
