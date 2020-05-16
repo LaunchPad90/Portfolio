@@ -23,16 +23,14 @@ export default function Button({ children }) {
 
     const ProjectsBtn = styled.button`
         background-color: #fff;
-        padding: 1.5rem 2rem;
+        padding: 1rem;
         display: inline-block;
         border-radius: 100px;
-        animation: ${moveInBtn} .5s ease-out .75s;
         animation-fill-mode: backwards;
-        font-size: 2rem;
-
-        ${media.m`
-            padding: .5rem 1rem;
-        `}
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        animation: ${moveInBtn} .5s ease-out .75s;
+        cursor: pointer;
     `;
 
     return (

@@ -2,13 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
 import GifModal from "../components/modal"
+import Button from "../components/button"
 
 
 export default function Card(props) {
 
     const CardBox = styled.div`
-        width: 28rem;;
-        height: 38rem;
+        width: 23rem;;
+        height: 30rem;
         perspective: 1000px;
         margin: 2rem;
         text-align: center;
@@ -25,7 +26,7 @@ export default function Card(props) {
         align-items: center;
         height: 100%;
         width: 100%;
-        background: rgba(245, 245, 245, 0.6);
+
     `;
 
     const CardBack = styled.div`
@@ -69,24 +70,13 @@ export default function Card(props) {
     `;
 
     const CardTitle = styled.div`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 3.5rem;
         width: 100%;
         height: 40%;
-        background: linear-gradient(
-            to left bottom, 
-            ${props.color1}, 
-            ${props.color2}), 
-            url(${props.projectImage}
-            
-        );
-        color: white;
+        background: ${props.projectImage};
+        background-color: ${props.color1};
         background-position: top;
         background-size: cover;
         position: relative;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         ${media.l`
             font-size: 2rem;
@@ -106,7 +96,7 @@ export default function Card(props) {
 
     const ListItem = styled.li`
         list-style: none;
-        font-size: 2.5rem;
+        font-size: 1.4rem;
         padding: 1rem;
 
         &:not(:last-child) {
@@ -117,11 +107,6 @@ export default function Card(props) {
             font-size: 1.5rem;
         `}
     `;
-
-    // const CardImg = styled.video`
-    //     width: 100%;
-    //     height: 100%;
-    // `;
 
     const Buttons = styled.div`
         display: inline-block;
@@ -143,24 +128,24 @@ export default function Card(props) {
         <CardBox>
             <Card onClick={Flipped}>
                 <CardFront>
-                    <CardTitle>{props.projectTitle}</CardTitle>
+                    <CardTitle></CardTitle>
+                    <div style={{fontSize: `2.2rem`, padding: `1.5rem`}}>{props.projectTitle}</div>
                     {/* <CardImg controls type="video/mp4" src={props.projectGif} /> */}
                     <ContentList>
                         <ListItem>{props.projectTech1}</ListItem>
                         <ListItem>{props.projectTech2}</ListItem>
                         <ListItem>{props.projectTech3}</ListItem>
                     </ContentList>
+                    <Button>View More</Button>
                 </CardFront>
                 <CardBack>
                     <CardContent>{props.projectContent}</CardContent>
                     <Buttons>
-                        {/* <button><A href={props.projectGif} target="blank">View Demo</A></button> */}
                         <GifModal 
                             gif={props.projectGif}
                             title={props.projectTitle}
                         />
-                        <button><A href={props.hosted} target="blank">View Hosted</A></button>
-                        <button><A href={props.gitHub} target="blank">View Code</A></button>
+                        <Button><A href={props.gitHub} target="blank">View Code</A></Button>
                     </Buttons>
                 </CardBack>
             </Card>

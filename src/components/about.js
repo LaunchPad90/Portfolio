@@ -6,22 +6,7 @@ import media from "../styles/media"
 
 
 export default function About(props) {
-
-    const AboutContainer = styled.div`
-        width: 100%;
-        font-family: Roboto, sans serif, monospace;
-        font-size: 3rem;
-                
-        ${media.xl`
-            height: 100%;
-        `}
-
-        ${media.l`
-            height: 100vh;
-            font-size: 2rem;
-        `}
-    `;
-
+    
     const AboutTitle = styled.h1`
         text-align: center;
         font-size: 3rem;
@@ -60,14 +45,14 @@ export default function About(props) {
         `}
 
         ${media.m`
-            height: 100vh;
+            height: 100%;
             clip-path: none;
         `}
     `;
 
     const AboutCard = styled.div`
-        height: 25rem;
-        width: 25rem;
+        height: 21rem;
+        width: 21rem;
         margin: 0 auto;
         background: white;
         text-align: center;
@@ -77,10 +62,6 @@ export default function About(props) {
         flex-direction: column;
         justify-content: center;
         font-family: Roboto condensed, sans serif;
-
-        &.basketball {
-            flex-grow: 3;
-        }
 
         ${media.l`
             height: 20rem;
@@ -124,29 +105,23 @@ export default function About(props) {
     `;
 
     return (
-        <AboutContainer>
-            <AboutTitle>About Me</AboutTitle>
-            <AboutMe></AboutMe>
-            <AboutCardContainer>
-                <AboutCard>
-                    <AboutCardTitle>Golf</AboutCardTitle>
-                    <AboutContent>Golfing has become my absolute favortite past time. Let's link up for a round!</AboutContent>
-                </AboutCard>
-                <AboutCard>
-                    <AboutCardTitle>Skateboarding</AboutCardTitle>
-                    <AboutContent></AboutContent>
-                </AboutCard>
-            </AboutCardContainer>
-            <AboutCardContainer>
-                <AboutCard>
-                    <AboutCardTitle>Cooking</AboutCardTitle>
-                    <AboutContent></AboutContent>
-                </AboutCard>
-                <AboutCard className="basketball">
-                    <AboutCardTitle>Basketball</AboutCardTitle>
-                    <AboutContent></AboutContent>
-                </AboutCard>
-            </AboutCardContainer>
-        </AboutContainer>
+        <AboutCardContainer>
+            <AboutCard>
+                <AboutCardTitle>Golf</AboutCardTitle>
+                <AboutContent>Golfing has become my absolute favortite past time. Let's link up for a round!</AboutContent>
+            </AboutCard>
+            <AboutCard>
+                <AboutCardTitle>Skateboarding</AboutCardTitle>
+                <AboutContent></AboutContent>
+            </AboutCard>
+            <AboutCard>
+                <AboutCardTitle>Cooking</AboutCardTitle>
+                <AboutContent></AboutContent>
+            </AboutCard>
+            <AboutCard className="basketball">
+                <AboutCardTitle>Basketball</AboutCardTitle>
+                <AboutContent></AboutContent>
+            </AboutCard>
+        </AboutCardContainer>
     )
 }

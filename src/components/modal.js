@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import Button from './button';
 
 const customStyles = {
   content : {
@@ -33,7 +34,7 @@ function GifModal(props){
 
     return (
       <div>
-        <button onClick={openModal}>View Demo</button>
+        <Button style={{background: `blue`}} onClick={openModal}>View Demo</Button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}

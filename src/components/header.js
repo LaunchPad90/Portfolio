@@ -6,18 +6,14 @@ import media from "../styles/media"
 
 export default function Header() {
   
-  const NavLinks = styled.ul`
-    list-style: none;
+  const NavLinks = styled.div`
     font-size: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding: 1rem;
+    justify-content: flex-end;
+    padding: 1rem 2%;
     width: 100%;
 
     ${media.m`
-
       justify-content: center;
 
     `}
@@ -25,17 +21,23 @@ export default function Header() {
 
   const ListLink = styled(Link)`
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 2.5rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
     font-family: 'Roboto Condensed', sans-serif;
+
+    &.name {
+      font-size: 3.2rem;
+      margin-right: auto;
+    }
   `;
 
   return(
       <NavLinks>
-          <ListLink className="name" to="/">Home</ListLink>
-          <ListLink to="/resume/">Resume</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
+          <ListLink className="name" to="/">JH</ListLink>
+          <ListLink>Home</ListLink>
+          <ListLink className="about" to="/resume/">About</ListLink>
+          <ListLink className="contact" to="/contact/">Contact</ListLink>
       </NavLinks>
   )
 }

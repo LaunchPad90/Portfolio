@@ -1,15 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
 import img from "../images/skate-hero.jpeg"
-import Button from "../components/button"
+import Layout from "../components/layout"
+import Projects from "../components/projects"
+import media from "../styles/media"
 
 import "../styles/global.css"
-import Layout from "../components/layout"
-import Projects from "./projects"
-import About from "../components/about"
-import media from "../styles/media"
 
 
 
@@ -49,49 +46,39 @@ export default function Home() {
 
   const Hero = styled.div`
     position: relative;
-    height: 100vh;
+    height: 60%;
     background: linear-gradient(
-        to left bottom, 
-        #6facd5af, 
-        #283db4b7), 
-        url(${img}
-    );
+      to left bottom, 
+      #6facd5af, 
+      #283db4b7), 
+      url(${img}
+  );
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-   
+    clip-path: polygon(2% 0, 98% 0, 98% 80%, 2% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   `;
 
   const HeroTextBox = styled.div`
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    
-  `;
-
-  const HeroPrimary = styled.h1`
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    backface-visibility: hidden;
-    margin-bottom: 4rem;
+    align-self: center;
+    justify-content: center;
+    color: white;
   `;
 
   const HeroPrimaryMain = styled.span`
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 2.5rem;
+    letter-spacing: 1rem;
     margin-bottom: 2rem;
     animation: ${moveInLeft} 1s ease-out;
 
     ${media.m`
       font-size: 2rem;
-      letter-spacing: .2rem;
       width: 100vw;
     `}
   `;
@@ -100,7 +87,8 @@ export default function Home() {
     display: block;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
     animation: ${moveInRight} 1s ease-out;
 
     ${media.m`
@@ -110,36 +98,28 @@ export default function Home() {
     `}
   `;
 
-  const ProjectBtn = styled(Link)`
-    font-family: Roboto, sans serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #283db4b7;
+  const ProjectHeader = styled.h1`
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 1.3rem;
 
-    ${media.m`
-      font-size: 1.4rem;
-      letter-spacing: .2rem;
-    `}
-  `;
-
+        ${media.m`
+            font-size: 2rem;
+        `}
+    `;
   return (
     <div>
       <Layout>
         <Hero>
           <HeroTextBox>
-            <HeroPrimary>
               <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
               <HeroPrimarySub>denver based developer</HeroPrimarySub> 
               <HeroPrimarySub>focused on the front-end</HeroPrimarySub> 
-            </HeroPrimary>
-            <Button>
-              <ProjectBtn to="/projects/">View Projects</ProjectBtn>
-            </Button>
           </HeroTextBox>
         </Hero>
+        <ProjectHeader>View my recent works</ProjectHeader>
+        <Projects />
       </Layout>
-      <Projects />
-      <About />
     </div>
   );
 }

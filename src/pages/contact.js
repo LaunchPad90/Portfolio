@@ -4,28 +4,27 @@ import Layout from "../components/layout"
 import media from "../styles/media"
 
 import myPhoto from "../images/aboutMeSEI.jpg"
+import About from '../components/about'
 
 export default function Contact(props) {
 
     const ContactPage = styled.div`
         display: flex;
+        height: 100vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+
     `;
 
     const ContactCard = styled.div`
         display: flex;
-        flex-direction: row;
-        border: 10px solid green;
         height: 70vh;
         width: 70vw;
+        border: 10px solid orange;
         box-shadow: 20px 20px 20px rgba(100, 100, 100, 0.8);
 
-       
-
-        ${media.m`
+        ${media.l`
             flex-direction: column;
             width: 100%;
         `}
@@ -74,7 +73,6 @@ export default function Contact(props) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 5px solid purple;
         width: 55%;
 
         ${media.m`
@@ -90,7 +88,9 @@ export default function Contact(props) {
                         <Photo src={myPhoto}/>
                         <PersonalInfo />
                     </CardLeft>
-                    <CardRight></CardRight>
+                    <CardRight>
+                        <About />
+                    </CardRight>
                 </ContactCard>
             </ContactPage>
         </Layout>
