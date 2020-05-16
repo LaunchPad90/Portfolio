@@ -36,7 +36,7 @@ export default function Header() {
       <NavLinks>
           <ListLink className="name" to="/">JH</ListLink>
           <ListLink>Home</ListLink>
-          <ListLink className="about" to="/resume/">About</ListLink>
+          <ListLink className="about" to="/about/">About</ListLink>
           <ListLink className="contact" to="/contact/">Contact</ListLink>
       </NavLinks>
   )

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
 import { keyframes } from "styled-components"
-import media from "../styles/media"
 
 export default function Button({ children }) {
     

@@ -6,24 +6,6 @@ import media from "../styles/media"
 
 
 export default function About(props) {
-    
-    const AboutTitle = styled.h1`
-        text-align: center;
-        font-size: 3rem;
-
-
-        ${media.m`
-            font-size: 2rem;
-        `}
-    `;
-
-    const AboutMe = styled.div`
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-        justify-content: center;
-
-    `;
 
     const AboutCardContainer = styled.div`
         width: 100%;
