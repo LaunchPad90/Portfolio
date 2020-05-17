@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import styled from "styled-components"
 import {FaExternalLinkAlt, FaLinkedin, FaGithub} from "react-icons/fa";
 
@@ -9,13 +8,12 @@ export default function Footer() {
     const Div = styled.div`
         display: flex;
         justify-content: center;
-        align-items: flex-end;
         margin: 1rem;
-        position: relative;
+        bottom: 0;
 
     `;
     
-    const FooterLink = styled(Link)`
+    const FooterLink = styled.a`
         margin: 1rem;
         color: #3A5F85;
         text-decoration: none;
@@ -30,13 +28,12 @@ export default function Footer() {
         &.resume {
             padding: .5rem 2rem;
         }
-
     `;
     return (
         <Div>
             <FooterLink className="resume">Resume <FaExternalLinkAlt size={16}/></FooterLink>
-            <FooterLink className="linkedin"><FaLinkedin size={18}/></FooterLink>
-            <FooterLink className="github"><FaGithub size={18}/></FooterLink>
+            <FooterLink href="https://www.linkedin.com/in/jacob-hickey-8140b4197/" target="blank" className="linkedin"><FaLinkedin size={18}/></FooterLink>
+            <FooterLink href="https://github.com/LaunchPad90?tab=repositories" target="blank" className="github"><FaGithub size={18}/></FooterLink>
         </Div>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from 'react-modal';
-import Button from './button';
 
 const customStyles = {
   content : {
@@ -11,12 +10,21 @@ const customStyles = {
     marginRight: '-20%',
     transform: 'translate(-50%, -50%)',
     height: '70%',
-    width: '80%',
-    textDecoration: 'none',
-    color: 'white'
+    width: '80%'
   }
 };
 
+const buttonStyle = {
+  btn: {
+    backgroundColor: '#3A5F85',
+    color: 'white',
+    padding: '.5rem 2rem',
+    display: 'inline-block',
+    borderRadius: '100px',
+    fontSize: '1rem',
+    cursor: 'pointer',
+  }
+}
 
 function GifModal(props){
   var subtitle;
@@ -36,7 +44,7 @@ function GifModal(props){
 
     return (
       <div>
-        <Button onClick={openModal}>View Demo</Button>
+        <button style={buttonStyle.btn} onClick={openModal}>View Demo</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}

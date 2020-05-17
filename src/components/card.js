@@ -8,8 +8,8 @@ import Button from "../components/button"
 export default function Card(props) {
 
     const CardBox = styled.div`
-        width: 18rem;;
-        height: 25rem;
+        width: 21rem;;
+        height: 27rem;
         perspective: 1000px;
         margin: 3rem;
         text-align: center;
@@ -40,7 +40,6 @@ export default function Card(props) {
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
-        font-family: Roboto Condensed, sans-serif;
         padding-bottom: 1.5rem;
     `;
 
@@ -58,11 +57,6 @@ export default function Card(props) {
             backface-visibility: hidden;
             width: 100%;
             height: 100%;
-        }
-
-        ${CardBox}:hover &:hover {
-            cursor: pointer;
-            
         }
 
         ${CardBox}.flipped, &.flipped {

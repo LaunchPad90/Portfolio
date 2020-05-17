@@ -10,6 +10,7 @@ export default function Header() {
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 1rem 2%;
     width: 100%;
 
@@ -24,7 +25,7 @@ export default function Header() {
     margin-right: 2.5rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans serif, monospace;
 
     &.name {
       font-size: 3.2rem;

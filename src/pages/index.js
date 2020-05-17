@@ -46,7 +46,6 @@ export default function Home() {
   `;
 
   const Hero = styled.div`
-    position: relative;
     height: 100%;
     background: linear-gradient(
       to left bottom, 
@@ -56,7 +55,6 @@ export default function Home() {
   );
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
     clip-path: polygon(2% 0, 98% 0, 98% 80%, 2% 100%);
     display: flex;
     flex-direction: column;
@@ -68,7 +66,7 @@ export default function Home() {
     align-self: center;
     justify-content: center;
     color: white;
-    font-family: Roboto Condensed;
+    font-family: Roboto Condensed, sans-serif;
     margin-bottom: 2rem;
   `;
 
@@ -76,7 +74,7 @@ export default function Home() {
     display: block;
     font-size: 5rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    letter-spacing: .2rem;
     margin-bottom: 1rem;
     animation: ${moveInLeft} 1s ease-out;
 
@@ -89,8 +87,7 @@ export default function Home() {
   const HeroPrimarySub = styled.span`
     display: block;
     font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
     animation: ${moveInRight} 1s ease-out;
 
     ${media.m`
