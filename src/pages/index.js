@@ -7,6 +7,7 @@ import Projects from "../components/projects"
 import media from "../styles/media"
 
 import "../styles/global.css"
+import Footer from "../components/footer"
 
 
 
@@ -46,11 +47,11 @@ export default function Home() {
 
   const Hero = styled.div`
     position: relative;
-    height: 60%;
+    height: 100%;
     background: linear-gradient(
       to left bottom, 
-      #6facd5af, 
-      #283db4b7), 
+      #7597D380, 
+      #7597D380), 
       url(${img}
   );
     background-size: cover;
@@ -67,14 +68,16 @@ export default function Home() {
     align-self: center;
     justify-content: center;
     color: white;
+    font-family: Roboto Condensed;
+    margin-bottom: 2rem;
   `;
 
   const HeroPrimaryMain = styled.span`
     display: block;
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: ${moveInLeft} 1s ease-out;
 
     ${media.m`
@@ -86,9 +89,8 @@ export default function Home() {
   const HeroPrimarySub = styled.span`
     display: block;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: .5rem;
-    text-transform: uppercase;
     animation: ${moveInRight} 1s ease-out;
 
     ${media.m`
@@ -114,12 +116,13 @@ export default function Home() {
         <Hero>
           <HeroTextBox>
               <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
-              <HeroPrimarySub>denver based developer</HeroPrimarySub> 
+              <HeroPrimarySub>Denver based developer</HeroPrimarySub> 
               <HeroPrimarySub>focused on the front-end</HeroPrimarySub> 
           </HeroTextBox>
         </Hero>
-        <ProjectHeader>View my recent work</ProjectHeader>
+        <ProjectHeader>View my Recent Work</ProjectHeader>
         <Projects />
+        <Footer />
       </Layout>
     </div>
   );

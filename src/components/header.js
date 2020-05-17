@@ -24,7 +24,7 @@ export default function Header() {
     margin-right: 2.5rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     &.name {
       font-size: 3.2rem;
@@ -34,7 +34,7 @@ export default function Header() {
 
   return(
       <NavLinks>
-          <ListLink className="name" to="/">JH</ListLink>
+          <ListLink className="name" to="/">jh.</ListLink>
           <ListLink>Home</ListLink>
           <ListLink className="about" to="/about/">About</ListLink>
           <ListLink className="contact" to="/contact/">Contact</ListLink>

@@ -21,7 +21,6 @@ export default function Layout({ children }) {
     <LayoutDiv>
         <Header />
         {children}
-        <Footer />
     </LayoutDiv>
   )
 }

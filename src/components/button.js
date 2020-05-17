@@ -4,7 +4,7 @@ import { keyframes } from "styled-components"
 
 export default function Button({ children }) {
 
-    const ProjectsBtn = styled.button`
+    const Button = styled.button`
         background-color: #3A5F85;
         color: white;
         padding: .5rem 2rem;
@@ -12,13 +12,12 @@ export default function Button({ children }) {
         border-radius: 100px;
         animation-fill-mode: backwards;
         font-size: 1rem;
-        margin-bottom: 1rem;
         cursor: pointer;
     `;
 
     return (
-        <ProjectsBtn>
+        <Button>
             {children}
-        </ProjectsBtn>
+        </Button>
     )
 }

@@ -1,7 +1,7 @@
-import vegas from "../images/vegas.png"
-import steak from "../images/steak.png"
-import badappapp from "../images/badappapp.png"
-import golfImg from "../images/forecard-image.png"
+import slot from "../images/slot.png"
+import food from "../images/food.png"
+import badapp from "../images/badapp.png"
+import golfImg from "../images/golf.png"
 import slotGif from "../images/slotGif.mp4"
 import smackTalkGif from "../images/smack-talk-gif.mp4"
 
@@ -12,7 +12,7 @@ export default [
         tech2: "CSS",
         tech3: "Javascript",
         content: "Simple browser game. This was my first attempt at writing javascript logic for a game. This project was completed in 1 week and is deployed on Github pages.",
-        image: `${vegas}`,
+        image: `${slot}`,
         gif: `${slotGif}`,
         color1: "rgba(72, 103, 228, 0.4)",
         color2: "rgba(27, 60, 191, 0.8)",
@@ -26,7 +26,7 @@ export default [
         tech2: "Express.js",
         tech3: "MongoDB",
         content: "Do you love cooking? Do you hate viewing recipes on blog sites? This is the webapp for you. Enough talking, lets cook.",
-        image: `${steak}`,
+        image: `${food}`,
         gif: `${smackTalkGif}`,
         color1: "rgba(150, 0, 200, 0.4)",
         color2: "rgba(124, 59, 220, 0.8)",
@@ -40,7 +40,7 @@ export default [
         tech2: "Django",
         tech3: "MongoDB",
         content: "A website designed for developers to post ideas and rate other app ideas. Looking for a time waster, something to make you laugh? Come and check out our app, guaranteed to help with your creativity.",
-        image: `${badappapp}`,
+        image: `${badapp}`,
         gif: "",
         color1: "rgba(255, 0, 12, 0.4)",
         color2: "rgba(255, 168, 96, 0.8)",

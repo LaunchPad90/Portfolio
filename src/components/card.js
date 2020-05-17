@@ -8,10 +8,10 @@ import Button from "../components/button"
 export default function Card(props) {
 
     const CardBox = styled.div`
-        width: 23rem;;
-        height: 30rem;
+        width: 18rem;;
+        height: 25rem;
         perspective: 1000px;
-        margin: 2rem;
+        margin: 3rem;
         text-align: center;
 
         ${media.l`
@@ -27,7 +27,7 @@ export default function Card(props) {
         align-items: center;
         height: 100%;
         width: 100%;
-
+        padding-bottom: 1.5rem;
     `;
 
     const CardBack = styled.div`
@@ -36,11 +36,12 @@ export default function Card(props) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
         font-family: Roboto Condensed, sans-serif;
+        padding-bottom: 1.5rem;
     `;
 
     const Card = styled.div `
@@ -70,18 +71,23 @@ export default function Card(props) {
         }
     `;
 
-    const CardTitle = styled.div`
+    const CardImage = styled.div`
         width: 100%;
-        height: 40%;
+        height: 100%;
         background: url(${props.projectImage});
         background-position: top;
         background-size: cover;
         position: relative;
-        color: #383838;
+        color: #5C5C5C;
 
         ${media.l`
             font-size: 2rem;
         `}
+    `;
+
+    const CardTitle = styled.div`
+        font-size: 2.2rem;
+        margin-top: .5rem;
     `;
 
     const CardContent = styled.div`
@@ -92,7 +98,7 @@ export default function Card(props) {
     `;
 
     const ContentList = styled.ul`
-        width: 80%;
+        width: 40%;
     `;
 
     const ListItem = styled.li`
@@ -111,14 +117,13 @@ export default function Card(props) {
 
     const Buttons = styled.div`
         display: inline-block;
-        margin: 1rem;
         justify-content: flex-end;
         align-items: flex-end;
     `;
 
     const A = styled.a`
-        margin: 1rem;
         text-decoration: none;
+        color: white;
     `;
 
     const Flipped = (e) => {
@@ -129,8 +134,8 @@ export default function Card(props) {
         <CardBox>
             <Card onClick={Flipped}>
                 <CardFront>
-                    <CardTitle />
-                    <div style={{fontSize: `2.2rem`, padding: `1.5rem`}}>{props.projectTitle}</div>
+                    <CardImage />
+                    <CardTitle>{props.projectTitle}</CardTitle>
                     {/* <CardImg controls type="video/mp4" src={props.projectGif} /> */}
                     <ContentList>
                         <ListItem>{props.projectTech1}</ListItem>

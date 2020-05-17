@@ -4,14 +4,16 @@ import Button from './button';
 
 const customStyles = {
   content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-20%',
-    transform             : 'translate(-50%, -50%)',
-    height:               '70%',
-    width: '80%'  
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-20%',
+    transform: 'translate(-50%, -50%)',
+    height: '70%',
+    width: '80%',
+    textDecoration: 'none',
+    color: 'white'
   }
 };
 
@@ -34,7 +36,7 @@ function GifModal(props){
 
     return (
       <div>
-        <Button style={{background: `blue`}} onClick={openModal}>View Demo</Button>
+        <Button onClick={openModal}>View Demo</Button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
