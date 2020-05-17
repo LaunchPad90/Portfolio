@@ -77,6 +77,7 @@ export default function Card(props) {
         background-position: top;
         background-size: cover;
         position: relative;
+        color: #383838;
 
         ${media.l`
             font-size: 2rem;
@@ -100,7 +101,7 @@ export default function Card(props) {
         padding: 1rem;
 
         &:not(:last-child) {
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid #707070;
         }
 
         ${media.l`

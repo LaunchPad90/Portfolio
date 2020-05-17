@@ -102,6 +102,7 @@ export default function Home() {
         font-size: 3rem;
         text-align: center;
         margin-top: 1.3rem;
+        color: #383838;
 
         ${media.m`
             font-size: 2rem;
@@ -117,7 +118,7 @@ export default function Home() {
               <HeroPrimarySub>focused on the front-end</HeroPrimarySub> 
           </HeroTextBox>
         </Hero>
-        <ProjectHeader>View my recent works</ProjectHeader>
+        <ProjectHeader>View my recent work</ProjectHeader>
         <Projects />
       </Layout>
     </div>
