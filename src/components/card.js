@@ -21,7 +21,6 @@ export default function Card(props) {
     `;
 
     const CardFront = styled.div`
-        background: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,7 +31,6 @@ export default function Card(props) {
 
     const CardBack = styled.div`
         background: white;
-        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,7 +63,7 @@ export default function Card(props) {
         }
     `;
 
-    const CardImage = styled.div`
+    const CardImage = styled.img`
         width: 100%;
         height: 100%;
         background: url(${props.projectImage});

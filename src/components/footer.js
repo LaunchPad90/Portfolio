@@ -20,6 +20,8 @@ export default function Footer() {
         font-size: 1.5rem;
         border: 2px solid #40506E;
         border-radius: 40px;
+        display: flex;
+        align-items: center;
 
         &.linkedin, &.github {
             padding: .5rem .8rem;
@@ -31,7 +33,7 @@ export default function Footer() {
     `;
     return (
         <Div>
-            <FooterLink className="resume">Resume <FaExternalLinkAlt size={16}/></FooterLink>
+            <FooterLink className="resume">Resume <FaExternalLinkAlt style={{marginLeft: `.5rem`}} size={16}/></FooterLink>
             <FooterLink href="https://www.linkedin.com/in/jacob-hickey-8140b4197/" target="blank" className="linkedin"><FaLinkedin size={18}/></FooterLink>
             <FooterLink href="https://github.com/LaunchPad90?tab=repositories" target="blank" className="github"><FaGithub size={18}/></FooterLink>
         </Div>
