@@ -9,7 +9,7 @@ export default function Card(props) {
 
     const CardBox = styled.div`
         width: 21rem;;
-        height: 27rem;
+        height: 30rem;
         perspective: 1000px;
         margin: 3rem;
         text-align: center;
@@ -24,9 +24,8 @@ export default function Card(props) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100%;
-        width: 100%;
         padding-bottom: 1.5rem;
+        
     `;
 
     const CardBack = styled.div`
@@ -64,15 +63,13 @@ export default function Card(props) {
     `;
 
     const CardImageDiv = styled.div`
-        width: 100%;
-        height: 100%;
+       width: 100%;
+       height: 70%;
     `;
 
-    const CardImgae = styled.img`
+    const CardImage = styled.img`
         width: 100%;
         height: 100%;
-        background-position: top;
-        background-size: cover;
     `;
 
     const CardTitle = styled.div`
@@ -82,12 +79,14 @@ export default function Card(props) {
 
     const CardContent = styled.div`
         width: 100%;
+        height: 100%;
         font-size: 1.8rem;
         padding: 1rem;
         justify-self: flex-start;
     `;
 
     const ContentList = styled.ul`
+        height: 100%;
         width: 40%;
     `;
 
@@ -125,7 +124,7 @@ export default function Card(props) {
             <Card onClick={Flipped}>
                 <CardFront>
                     <CardImageDiv>
-                        <CardImgae src={props.projectImage}/>
+                        <CardImage src={props.projectImage}/>
                     </CardImageDiv> 
                     <CardTitle>{props.projectTitle}</CardTitle>
                     {/* <CardImg controls type="video/mp4" src={props.projectGif} /> */}

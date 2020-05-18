@@ -2,6 +2,7 @@ import slot from "../images/slot.png"
 import food from "../images/food.png"
 import badapp from "../images/badapp.png"
 import golfImg from "../images/golf.png"
+
 import slotGif from "../images/slotGif.mp4"
 import smackTalkGif from "../images/smack-talk-gif.mp4"
 
