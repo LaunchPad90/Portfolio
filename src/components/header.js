@@ -22,7 +22,6 @@ export default function Header() {
 
   const ListLink = styled(Link)`
     display: inline-block;
-    margin-right: 2.5rem;
     text-decoration: none;
     color: rgb(61, 116, 235);
     font-family: Roboto, sans serif, monospace;
@@ -31,12 +30,16 @@ export default function Header() {
       font-size: 3.2rem;
       margin-right: auto;
     }
+
+    &.home, &.about {
+      margin-right: 2rem;
+    }
   `;
 
   return(
       <NavLinks>
-          <ListLink className="name" to="/">jh.</ListLink>
-          <ListLink>Home</ListLink>
+          <ListLink className="name" to="/">Hickey</ListLink>
+          <ListLink className="home">Home</ListLink>
           <ListLink className="about" to="/about/">About</ListLink>
           <ListLink className="contact" to="/contact/">Contact</ListLink>
       </NavLinks>
