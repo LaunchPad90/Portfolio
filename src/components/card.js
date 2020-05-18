@@ -65,6 +65,7 @@ export default function Card(props) {
     const CardImageDiv = styled.div`
        width: 100%;
        height: 70%;
+       margin-bottom: .5rem;
     `;
 
     const CardImage = styled.img`
@@ -88,6 +89,7 @@ export default function Card(props) {
     const ContentList = styled.ul`
         height: 100%;
         width: 40%;
+        margin-top: 1rem;
     `;
 
     const ListItem = styled.li`
