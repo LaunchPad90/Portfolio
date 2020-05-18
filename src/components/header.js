@@ -11,7 +11,7 @@ export default function Header() {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 2%;
+    padding: .5rem 2%;
     width: 100%;
 
     ${media.m`
