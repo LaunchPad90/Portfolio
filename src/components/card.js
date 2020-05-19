@@ -113,14 +113,17 @@ export default function Card(props) {
     `;
 
     const A = styled.a`
+        background-color: white;
+        color: #3A5F85;
+        border: 2px solid #3A5F85;
+        padding: .5rem 2rem;
+        display: inline-block;
+        border-radius: 100px;
+        font-size: 1rem;
+        cursor: pointer;
         text-decoration: none;
-        color: white;
-
-        &:hover {
-            background: white;
-            color: #3A5F85;
-        }
-    `;
+        margin-top: .5rem;
+`;
 
     const Flipped = (e) => {
         e.currentTarget.classList.toggle('flipped');
@@ -149,7 +152,7 @@ export default function Card(props) {
                             gif={props.projectGif}
                             title={props.projectTitle}
                         />
-                        <Button><A href={props.gitHub} target="blank">View Code</A></Button>
+                        <A href={props.gitHub} target="blank">View Code</A>
                     </Buttons>
                 </CardBack>
             </Card>

@@ -12,12 +12,13 @@ export default function Contact(props) {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #383838;
     `;
 
     const FormGroup = styled.div`
         margin: 1rem;
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 2rem;
     `;
 
@@ -29,6 +30,7 @@ export default function Contact(props) {
     const Form = styled.form`
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 50%;
         width: 25%;
     `;
@@ -36,29 +38,31 @@ export default function Contact(props) {
     const FormText = styled.textarea`
         width: 100%;
         height: 200px;
+        box-shadow: inset 1px 1px rgba(0, 0, 0, 0.7);
     `;
 
     const Input = styled.input`
         font-size: 2rem;
         width: 100%;
+        box-shadow: inset 1px 1px rgba(0, 0, 0, 0.7);
     `;
     return (
         <Layout>
             <ContactPage>
                 <Form action="https://formspree.io/mpzyqjyv" method="POST">
                     <FormGroup>
-                        <Label>Name</Label>
+                        <Label>What's your name?</Label>
                         <Input type="text" />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Email</Label>
+                        <Label>What's your email?</Label>
                         <Input type="email" name="_replyto" />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Message</Label>
+                        <Label>How can I help?</Label>
                         <FormText name="message"/>
                     </FormGroup>
-                    <Button type="submit">Send</Button>
+                    <Button type="submit">Away we go!</Button>
                 </Form>
             </ContactPage>
             <Footer />

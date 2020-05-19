@@ -112,9 +112,8 @@ export default function Home() {
       <Layout>
         <Hero>
           <HeroTextBox>
-              <HeroPrimaryMain>Jacob Hickey</HeroPrimaryMain>
-              <HeroPrimarySub>Denver based developer</HeroPrimarySub> 
-              <HeroPrimarySub>focused on the front-end</HeroPrimarySub> 
+              <HeroPrimaryMain>Denver based developer</HeroPrimaryMain>
+              <HeroPrimarySub>Currently focusing on front-end technologies. I love playing around in React and creating elegant UI.</HeroPrimarySub> 
           </HeroTextBox>
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>
