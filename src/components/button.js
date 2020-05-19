@@ -11,6 +11,12 @@ export default function Button({ children }) {
         border-radius: 100px;
         font-size: 1rem;
         cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            color: #3A5F85;
+            border: 1.5px solid #40506E;
+        }
     `;
 
     return (

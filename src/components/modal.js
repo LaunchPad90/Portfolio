@@ -17,8 +17,8 @@ const customStyles = {
 
 const buttonStyle = {
   btn: {
-    backgroundColor: '#3A5F85',
-    color: 'white',
+    backgroundColor: 'white' ,
+    color: '#3A5F85',
     padding: '.5rem 2rem',
     display: 'inline-block',
     borderRadius: '100px',

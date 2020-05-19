@@ -23,6 +23,11 @@ export default function Footer() {
         display: flex;
         align-items: center;
 
+        &:hover {
+            background: #3A5F85;
+            color: white;
+        }
+
         &.linkedin, &.github {
             padding: .5rem .8rem;
         }

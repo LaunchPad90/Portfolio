@@ -115,6 +115,11 @@ export default function Card(props) {
     const A = styled.a`
         text-decoration: none;
         color: white;
+
+        &:hover {
+            background: white;
+            color: #3A5F85;
+        }
     `;
 
     const Flipped = (e) => {
