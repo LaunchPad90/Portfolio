@@ -75,10 +75,10 @@ export default function Home() {
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: .2rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     animation: ${moveInLeft} 1s ease-out;
 
-    ${media.m`
+    ${media.l`
       font-size: 2rem;
       width: 100vw;
     `}
@@ -86,11 +86,12 @@ export default function Home() {
 
   const HeroPrimarySub = styled.span`
     display: block;
+    padding: 2%;
     font-size: 2rem;
     letter-spacing: .2rem;
     animation: ${moveInRight} 1s ease-out;
 
-    ${media.m`
+    ${media.l`
       font-size: 2rem;
       letter-spacing: .2rem;
       width: 100vw;
@@ -103,7 +104,7 @@ export default function Home() {
         margin-top: 1.3rem;
         color: #383838;
 
-        ${media.m`
+        ${media.l`
             font-size: 2rem;
         `}
     `;
@@ -113,7 +114,7 @@ export default function Home() {
         <Hero>
           <HeroTextBox>
               <HeroPrimaryMain>Denver based developer</HeroPrimaryMain>
-              <HeroPrimarySub>Currently focusing on front-end technologies. I love playing around in React and creating elegant UI.</HeroPrimarySub> 
+              <HeroPrimarySub>Focusing on front-end technologies. Currently hacking around in React and challenging myself on codewars.</HeroPrimarySub> 
           </HeroTextBox>
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>

@@ -16,6 +16,7 @@ export default function Header() {
 
     ${media.m`
       justify-content: center;
+      font-size: 1.6rem;
 
     `}
    `;
@@ -29,6 +30,10 @@ export default function Header() {
     &.name {
       font-size: 3.2rem;
       margin-right: auto;
+
+      ${media.m`
+        font-size: 2.5rem;
+      `}
     }
 
     &.home, &.about {

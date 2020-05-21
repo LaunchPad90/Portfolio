@@ -25,15 +25,12 @@ export default function Card(props) {
         flex-direction: column;
         align-items: center;
         padding-bottom: 1.5rem;
-        
     `;
 
     const CardBack = styled.div`
         background: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
@@ -64,8 +61,13 @@ export default function Card(props) {
 
     const CardImageDiv = styled.div`
        width: 100%;
-       height: 70%;
+       height: 30%;
        margin-bottom: .5rem;
+
+       ${media.l`
+            height: 25%;
+            margin-bottom: 0;
+       `}
     `;
 
     const CardImage = styled.img`
@@ -83,7 +85,8 @@ export default function Card(props) {
         height: 100%;
         font-size: 1.8rem;
         padding: 1rem;
-        justify-self: flex-start;
+        display: flex;
+        align-items: center;
     `;
 
     const ContentList = styled.ul`

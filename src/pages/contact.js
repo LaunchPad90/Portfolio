@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import Button from "../components/button";
+import media from "../styles/media"
 
 
 export default function Contact(props) {
@@ -12,6 +13,12 @@ export default function Contact(props) {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #383838;
+    `;
+
+    const Message = styled.div`
+        font-size: 2.5rem;
+        text-align: center;
         color: #383838;
     `;
 
@@ -32,7 +39,12 @@ export default function Contact(props) {
         flex-direction: column;
         align-items: center;
         height: 50%;
-        width: 25%;
+        width: 40%;
+
+        ${media.l`
+            height: 80%;
+            width: 60%;
+        `}
     `;
 
     const FormText = styled.textarea`
@@ -48,6 +60,7 @@ export default function Contact(props) {
     `;
     return (
         <Layout>
+            <Message>Wanna get in touch? Drop me a line throught the form below. I'm currently accepting all offers for work.</Message>
             <ContactPage>
                 <Form action="https://formspree.io/mpzyqjyv" method="POST">
                     <FormGroup>
