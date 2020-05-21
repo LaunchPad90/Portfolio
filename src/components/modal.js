@@ -6,8 +6,8 @@ const customStyles = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    height: '60%',
-    width: '65%',
+    height: '80%',
+    width: '75%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -31,7 +31,7 @@ const buttonStyle = {
     cursor: 'pointer', 
     backgroundColor: 'red', 
     color: 'white', 
-    padding: '.3rem'
+    padding: '.3rem',
   }
 }
 
@@ -72,7 +72,7 @@ function GifModal(props){
         >
 
           <button style={buttonStyle.close} onClick={closeModal}>X</button>
-          <video autoPlay="autoplay" style={{height: `80%`, width: `100%`}} src={props.gif} title={props.gif}/>
+          <img autoPlay="autoplay" style={{height: `85%`, width: `100%`}} src={props.gif} alt="gif of app" title={props.gif}/>
           <h2>Please allow a few seconds to view hosted website.</h2>
           <a style={linkStyle.link} href={props.hosted} target="blank">View hosted app</a>
         </Modal>

@@ -3,8 +3,11 @@ import food from "../images/food.png"
 import badapp from "../images/badapp.png"
 import golfImg from "../images/golf.png"
 
-import slotGif from "../images/slotGif.mp4"
-import smackTalkGif from "../images/smackTalkGif.mp4"
+import slotGif from "../images/slotGif.gif"
+import smackTalkGif from "../images/smackTalkGif.gif"
+import badAppGif from "../images/badAppGif.gif"
+import foreCardGif from "../images/foreCardGif.gif"
+
 
 export default [
     {
@@ -42,11 +45,11 @@ export default [
         tech3: "MongoDB",
         content: "A website designed for developers to post ideas and rate other app ideas. Guaranteed to help with your creativity.",
         image: `${badapp}`,
-        gif: ``,
+        gif: `${badAppGif}`,
         color1: "rgba(255, 0, 12, 0.4)",
         color2: "rgba(255, 168, 96, 0.8)",
         gitHub: "https://github.com/LaunchPad90/bad_app_app",
-        hosted: ""
+        hosted: "https://badapp-app.herokuapp.com/"
     },
 
     {
@@ -56,7 +59,7 @@ export default [
         tech3: "MongoDB",
         content: "Easy to use scorecard app, designed with a mobile first approach. This app wont help with your game, but it will help you see how bad you are...FORE!",
         image: `${golfImg}`,
-        gif: "",
+        gif: `${foreCardGif}`,
         color1: "rgba(85, 197, 122, 0.4)",
         color2: "rgba(21, 157, 62, 0.8)",
         gitHub: "https://github.com/LaunchPad90/FORE-card",
