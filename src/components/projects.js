@@ -2,7 +2,6 @@ import React from "react"
 import Card from "./card"
 import styled from "styled-components"
 import projectData from "../data/project-data"
-import media from "../styles/media"
 
 export default function Projects(props) {
 

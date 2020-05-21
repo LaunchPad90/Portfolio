@@ -24,29 +24,38 @@ export default function Header() {
   const ListLink = styled(Link)`
     display: inline-block;
     text-decoration: none;
-    color: rgb(61, 116, 235);
+    color: #383838;
     font-family: Roboto, sans serif, monospace;
 
-    &.name {
+    &.active {
+      border-bottom: 2px solid #383838;
+    }
+
+    &#name {
       font-size: 3.2rem;
       margin-right: auto;
+      color: #3A5F85;
+
+      &.active {
+        border-bottom: none;
+      }
 
       ${media.m`
         font-size: 2.5rem;
       `}
     }
 
-    &.home, &.about {
+    &#home, &#about {
       margin-right: 2rem;
     }
   `;
 
   return(
       <NavLinks>
-          <ListLink className="name" to="/">Jacob Hickey</ListLink>
-          <ListLink className="home">Home</ListLink>
-          <ListLink className="about" to="/about/">About</ListLink>
-          <ListLink className="contact" to="/contact/">Contact</ListLink>
+          <ListLink id="name" activeClassName="active" to="/">Jacob Hickey</ListLink>
+          <ListLink id="home" activeClassName="active">Home</ListLink>
+          <ListLink id="about" activeClassName="active" to="/about/">About</ListLink>
+          <ListLink id="contact" activeClassName="active" to="/contact/">Contact</ListLink>
       </NavLinks>
   )
 }

@@ -54,7 +54,8 @@ function GifModal(props){
         >
 
           <button style={{fontSize: `2rem`, alignSelf: `flex-end`, cursor: `pointer`}} onClick={closeModal}>X</button>
-          <iframe style={{ height: `100%`, width: `100%`}} src={props.gif} title={props.gif}/>
+          <h2>This app is hosted on heroku so give it a minute to load up if you would like to view the hosted version.</h2>
+          <video autoPlay="autoplay" style={{height: `100%`, width: `100%`}} src={props.gif} title={props.gif}/>
         </Modal>
       </div>
     );

@@ -4,7 +4,7 @@ import badapp from "../images/badapp.png"
 import golfImg from "../images/golf.png"
 
 import slotGif from "../images/slotGif.mp4"
-import smackTalkGif from "../images/smack-talk-gif.mp4"
+import smackTalkGif from "../images/smackTalkGif.mp4"
 
 export default [
     {
@@ -42,7 +42,7 @@ export default [
         tech3: "MongoDB",
         content: "A website designed for developers to post ideas and rate other app ideas. Guaranteed to help with your creativity.",
         image: `${badapp}`,
-        gif: "",
+        gif: ``,
         color1: "rgba(255, 0, 12, 0.4)",
         color2: "rgba(255, 168, 96, 0.8)",
         gitHub: "https://github.com/LaunchPad90/bad_app_app",
