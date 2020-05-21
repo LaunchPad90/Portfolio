@@ -32,7 +32,7 @@ export default [
         color1: "rgba(150, 0, 200, 0.4)",
         color2: "rgba(124, 59, 220, 0.8)",
         gitHub: "https://github.com/LaunchPad90/Smack-Talk",
-        hosted: ""
+        hosted: "https://thawing-wave-87870.herokuapp.com/"
     },
 
     {

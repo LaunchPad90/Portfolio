@@ -156,6 +156,7 @@ export default function Card(props) {
                         <GifModal 
                             gif={props.projectGif}
                             title={props.projectTitle}
+                            hosted={props.hosted}
                         />
                         <A href={props.gitHub} target="blank">View Code</A>
                     </Buttons>
