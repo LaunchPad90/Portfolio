@@ -54,7 +54,7 @@ export default [
         tech1: "React.js",
         tech2: "Express.js",
         tech3: "MongoDB",
-        content: "Easy to use scorecard app.",
+        content: "Easy to use scorecard app, designed with a mobile first approach. This app wont help with your game, but it will help you see how bad you are...FORE!",
         image: `${golfImg}`,
         gif: "",
         color1: "rgba(85, 197, 122, 0.4)",

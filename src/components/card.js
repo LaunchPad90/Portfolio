@@ -43,7 +43,8 @@ export default function Card(props) {
         height: 100%;
         transition: transform 1s;
         transform-style: preserve-3d;
-        box-shadow: 20px 20px 25px rgba(50,50,50,.2);
+        box-shadow: 20px 20px 25px rgba(50,50,50,.5);
+        border-radius: 10px;
         
 
         ${CardFront}, ${CardBack} {
@@ -73,6 +74,7 @@ export default function Card(props) {
     const CardImage = styled.img`
         width: 100%;
         height: 100%;
+        border-radius: 10px;
     `;
 
     const CardTitle = styled.div`
