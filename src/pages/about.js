@@ -48,7 +48,7 @@ export default function About() {
   return (
     <Layout>
       <AboutContainer>
-        <Photo src={myImg}/>
+        <Photo src={myImg} alt="image of developer"/>
         <Bio>After managing restaurants for the past 5 years, I understand how to strategically solve complex problems. I love working with people and helping achieve team success. When I’m not writing code, I love getting out early for a round of golf, trying new recipes in the kitchen, and playing games online with my friends. Let’s link up!</Bio>
       </AboutContainer>
       <Footer />

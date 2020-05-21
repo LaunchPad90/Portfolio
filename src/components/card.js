@@ -139,10 +139,9 @@ export default function Card(props) {
             <Card onClick={Flipped}>
                 <CardFront>
                     <CardImageDiv>
-                        <CardImage src={props.projectImage}/>
+                        <CardImage src={props.projectImage} alt="image of website"/>
                     </CardImageDiv> 
                     <CardTitle>{props.projectTitle}</CardTitle>
-                    {/* <CardImg controls type="video/mp4" src={props.projectGif} /> */}
                     <ContentList>
                         <ListItem>{props.projectTech1}</ListItem>
                         <ListItem>{props.projectTech2}</ListItem>
