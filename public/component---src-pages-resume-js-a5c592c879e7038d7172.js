@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{F2CN:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var u=e("q1tI"),r=e.n(u),a=e("Bl7J");function c(){return r.a.createElement(a.a,null)}}}]);
-//# sourceMappingURL=component---src-pages-resume-js-a5c592c879e7038d7172.js.map
