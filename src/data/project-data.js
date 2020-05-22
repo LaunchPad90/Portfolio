@@ -3,10 +3,10 @@ import food from "../images/food.png"
 import badapp from "../images/badapp.png"
 import golfImg from "../images/golf.png"
 
-import slotGif from "../images/slotGif.gif"
-import smackTalkGif from "../images/smackTalkGif.gif"
-import badAppGif from "../images/badAppGif.gif"
-import foreCardGif from "../images/foreCardGif.gif"
+import slotGif from "../images/slotMachine2.gif"
+import smackTalkGif from "../images/smackTalk2.gif"
+import badAppGif from "../images/badapp2.gif"
+import foreCardGif from "../images/golf2.gif"
 
 
 export default [
