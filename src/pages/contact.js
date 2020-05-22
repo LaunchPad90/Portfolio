@@ -23,6 +23,10 @@ export default function Contact(props) {
         height: 25%;
         width: 40%;
         text-align: center;
+
+        ${media.m`
+            font-size: 1.8rem;
+        `}
     `;
 
     const FormGroup = styled.div`
