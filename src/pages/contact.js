@@ -65,7 +65,7 @@ export default function Contact(props) {
     return (
         <Layout>
             <ContactPage>
-                <Message>Wanna get in touch? Drop me a line through the form below. I'm currently accepting all work offers.</Message>
+                <Message>Wanna get in touch? Drop me a line through the form below.</Message>
                 <Form action="https://formspree.io/mpzyqjyv" method="POST">
                     <FormGroup>
                         <Label>What's your name?</Label>
