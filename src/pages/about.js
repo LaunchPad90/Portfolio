@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import styled from "styled-components"
-import myImg from "../images/aboutMeSEI.jpg"
+import myImg from "../images/aboutMeSEI.webp"
 import media from "../styles/media"
 
 

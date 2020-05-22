@@ -1,7 +1,7 @@
-import slot from "../images/slot.png"
-import food from "../images/food.png"
-import badapp from "../images/badapp.png"
-import golfImg from "../images/golf.png"
+import slot from "../images/slot.webp"
+import food from "../images/food.webp"
+import badapp from "../images/badapp.webp"
+import golfImg from "../images/golf.webp"
 
 import slotGif from "../images/slotMachine2.gif"
 import smackTalkGif from "../images/smackTalk2.gif"

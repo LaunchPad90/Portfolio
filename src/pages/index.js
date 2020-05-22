@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
-import img from "../images/skate-hero.jpeg"
+import img from "../images/skate-hero.webp"
 import Layout from "../components/layout"
 import Projects from "../components/projects"
 import media from "../styles/media"
