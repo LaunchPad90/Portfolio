@@ -72,7 +72,7 @@ function GifModal(props){
         >
 
           <button style={buttonStyle.close} onClick={closeModal}>X</button>
-          <img autoPlay="autoplay" style={{height: `65%`, width: `80%`}} src={props.gif} alt="gif of app" title={props.gif}/>
+          <img autoPlay="autoplay" style={{height: `85%`, width: `90%`}} src={props.gif} alt="gif of app" title={props.gif}/>
           <h2>Please allow a few seconds to view hosted website.</h2>
           <a style={linkStyle.link} href={props.hosted} target="blank">View hosted app</a>
         </Modal>
