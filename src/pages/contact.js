@@ -57,6 +57,7 @@ export default function Contact(props) {
     const FormText = styled.textarea`
         width: 100%;
         height: 200px;
+        font-size: 1.6rem;
         box-shadow: inset 1px 1px rgba(0, 0, 0, 0.7);
     `;
 
