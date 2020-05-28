@@ -11,6 +11,7 @@ export default function Button({ children }) {
         border-radius: 100px;
         font-size: 1rem;
         cursor: pointer;
+        margin-bottom: 1.5rem;
     `;
 
     return (

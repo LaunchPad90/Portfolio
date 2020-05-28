@@ -24,8 +24,9 @@ export default function Contact(props) {
         width: 40%;
         text-align: center;
 
-        ${media.m`
-            font-size: 1.8rem;
+        ${media.l`
+            width: 95%;
+            margin-top: 5rem;
         `}
     `;
 
@@ -50,7 +51,12 @@ export default function Contact(props) {
 
         ${media.l`
             height: 80%;
-            width: 60%;
+            width: 80%;
+        `}
+
+        ${media.m`
+            height: 80%;
+            width: 95%;
         `}
     `;
 

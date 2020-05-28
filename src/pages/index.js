@@ -46,7 +46,7 @@ export default function Home() {
   `;
 
   const Hero = styled.div`
-    height: 100%;
+    height: 50vh;
     background: linear-gradient(
       to left bottom, 
       #7597D380, 
@@ -55,10 +55,15 @@ export default function Home() {
   );
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
     clip-path: polygon(2% 0, 98% 0, 98% 80%, 2% 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    ${media.l`
+      height: 70vh;
+    `}
   `;
 
   const HeroTextBox = styled.div`
@@ -70,7 +75,7 @@ export default function Home() {
     margin-bottom: 2rem;
   `;
 
-  const HeroPrimaryMain = styled.span`
+  const HeroTextMain = styled.span`
     display: block;
     font-size: 5rem;
     font-weight: 700;
@@ -79,12 +84,16 @@ export default function Home() {
     animation: ${moveInLeft} 1s ease-out;
 
     ${media.l`
-      font-size: 2rem;
+      font-size: 4rem;
       width: 100vw;
+    `}
+
+    ${media.s`
+      font-size: 2rem;
     `}
   `;
 
-  const HeroPrimarySub = styled.span`
+  const HeroTextSub = styled.span`
     display: block;
     padding: 2%;
     font-size: 2rem;
@@ -95,6 +104,10 @@ export default function Home() {
       font-size: 2rem;
       letter-spacing: .2rem;
       width: 100vw;
+    `}
+
+    ${media.s`
+      font-size: 1rem;
     `}
   `;
 
@@ -113,8 +126,8 @@ export default function Home() {
       <Layout>
         <Hero>
           <HeroTextBox>
-              <HeroPrimaryMain>Denver based developer</HeroPrimaryMain>
-              <HeroPrimarySub>Focusing on front-end technologies. Currently hacking around in React and challenging myself on codewars.</HeroPrimarySub> 
+              <HeroTextMain>Denver based developer</HeroTextMain>
+              <HeroTextSub>Focusing on front-end technologies. Currently hacking around in React and challenging myself on codewars.</HeroTextSub> 
           </HeroTextBox>
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>

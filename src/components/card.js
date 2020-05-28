@@ -9,20 +9,16 @@ export default function Card(props) {
 
     const CardBox = styled.div`
         width: 21rem;;
-        height: 30rem;
+        height: 32rem;
         perspective: 1000px;
         margin: 3rem;
         text-align: center;
-
-        ${media.l`
-            height: 25rem;
-            width: 20rem;
-        `}
     `;
 
     const CardFront = styled.div`
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         padding-bottom: 1.5rem;
     `;
@@ -31,6 +27,7 @@ export default function Card(props) {
         background: white;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
@@ -43,7 +40,7 @@ export default function Card(props) {
         height: 100%;
         transition: transform 1s;
         transform-style: preserve-3d;
-        box-shadow: 20px 20px 25px rgba(50,50,50,.5);
+        box-shadow: 10px 10px 15px rgba(50,50,50,.5);
         border-radius: 10px;
         
 
@@ -56,25 +53,18 @@ export default function Card(props) {
 
         ${CardBox}.flipped, &.flipped {
             transform: rotateY(180deg);
-            box-shadow: -20px 20px 25px rgba(50,50,50,.2);
+            box-shadow: -10px 10px 15px rgba(50,50,50,.2);
         }
     `;
 
-    const CardImageDiv = styled.div`
-       width: 100%;
-       height: 30%;
-       margin-bottom: .5rem;
-
-       ${media.l`
-            height: 25%;
-            margin-bottom: 0;
-       `}
-    `;
-
-    const CardImage = styled.img`
+    const CardImage = styled.div`
         width: 100%;
-        height: 100%;
-        border-radius: 10px;
+        height: 20rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px 10px 0 0;
+        background-image: url(${(props) => props.projectImageSrc});
+        background-size: cover;
+        background-position: center center;
     `;
 
     const CardTitle = styled.div`
@@ -138,9 +128,7 @@ export default function Card(props) {
         <CardBox>
             <Card onClick={Flipped}>
                 <CardFront>
-                    <CardImageDiv>
-                        <CardImage src={props.projectImage} alt="image of website"/>
-                    </CardImageDiv> 
+                    <CardImage projectImageSrc={props.projectImage} />
                     <CardTitle>{props.projectTitle}</CardTitle>
                     <ContentList>
                         <ListItem>{props.projectTech1}</ListItem>
