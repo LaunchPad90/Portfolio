@@ -126,7 +126,7 @@ export default function Home() {
       <Layout>
         <Hero>
           <HeroTextBox>
-              <HeroTextMain>Denver based developer</HeroTextMain>
+              <HeroTextMain>Denver Based Developer</HeroTextMain>
               <HeroTextSub>Focusing on front-end technologies. Currently hacking around in React and challenging myself on codewars.</HeroTextSub> 
           </HeroTextBox>
         </Hero>
