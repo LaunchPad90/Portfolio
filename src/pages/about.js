@@ -24,7 +24,7 @@ export default function About() {
     height: 30rem;
     width: 30rem;
     border-radius: 50%;
-    border: 2px double #40506E;
+    border: 2px double #3A5F85;
     padding: 2px;
     background-image: url(${myImg});
     background-size: cover;

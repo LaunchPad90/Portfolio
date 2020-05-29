@@ -91,9 +91,10 @@ export default function Card(props) {
         list-style: none;
         font-size: 1.4rem;
         padding: 1rem;
+        color: #5C5C5C;
 
         &:not(:last-child) {
-            border-bottom: 1px solid #707070;
+            border-bottom: 1px solid #383838;
         }
 
         ${media.l`
