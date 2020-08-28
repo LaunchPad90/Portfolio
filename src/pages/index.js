@@ -96,6 +96,7 @@ export default function Home() {
   const HeroTextSub = styled.span`
     display: block;
     padding: 2%;
+    margin: 0 1rem;
     font-size: 2rem;
     letter-spacing: .2rem;
     animation: ${moveInRight} 1s ease-out;
@@ -127,7 +128,7 @@ export default function Home() {
         <Hero>
           <HeroTextBox>
               <HeroTextMain>Denver Based Developer</HeroTextMain>
-              <HeroTextSub>Focusing on front-end technologies. Currently hacking around in React and challenging myself on codewars.</HeroTextSub> 
+              <HeroTextSub>Mainly hacking around in React, challenging myself on codewars and learning new libraries and frameworks that interest me.</HeroTextSub> 
           </HeroTextBox>
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>
