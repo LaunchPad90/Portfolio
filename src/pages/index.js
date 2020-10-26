@@ -1,18 +1,15 @@
-import React from "react"
-import styled from "styled-components"
-import { keyframes } from "styled-components"
-import img from "../images/skate-hero.webp"
-import Layout from "../components/layout"
-import Projects from "../components/projects"
-import media from "../styles/media"
+import React from "react";
+import styled from "styled-components";
+import { keyframes } from "styled-components";
+import img from "../images/skate-hero.webp";
+import Layout from "../components/layout";
+import Projects from "../components/projects";
+import media from "../styles/media";
 
-import "../styles/global.css"
-import Footer from "../components/footer"
-
-
+import "../styles/global.css";
+import Footer from "../components/footer";
 
 export default function Home() {
-
   const moveInLeft = keyframes`
     0% {
         opacity: 0;
@@ -47,12 +44,8 @@ export default function Home() {
 
   const Hero = styled.div`
     height: 50vh;
-    background: linear-gradient(
-      to left bottom, 
-      #7597D380, 
-      #7597D380), 
-      url(${img}
-  );
+    background: linear-gradient(to left bottom, #7597d380, #7597d380),
+      url(${img});
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -79,8 +72,8 @@ export default function Home() {
     display: block;
     font-size: 5rem;
     font-weight: 700;
-    letter-spacing: .2rem;
-    margin-bottom: .5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
     animation: ${moveInLeft} 1s ease-out;
 
     ${media.l`
@@ -98,7 +91,7 @@ export default function Home() {
     padding: 2%;
     margin: 0 1rem;
     font-size: 2rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     animation: ${moveInRight} 1s ease-out;
 
     ${media.l`
@@ -113,22 +106,25 @@ export default function Home() {
   `;
 
   const ProjectHeader = styled.h1`
-        font-size: 3rem;
-        text-align: center;
-        margin-top: 1.3rem;
-        color: #383838;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.3rem;
+    color: #383838;
 
-        ${media.l`
+    ${media.l`
             font-size: 2rem;
         `}
-    `;
+  `;
   return (
     <div>
       <Layout>
         <Hero>
           <HeroTextBox>
-              <HeroTextMain>Denver Based Developer</HeroTextMain>
-              <HeroTextSub>Mainly hacking around in React, challenging myself on codewars and learning new libraries and frameworks that interest me.</HeroTextSub> 
+            <HeroTextMain>Denver Based Developer</HeroTextMain>
+            <HeroTextSub>
+              Mainly hacking around in React, challenging myself on codewars and
+              learning new libraries and frameworks that interest me.
+            </HeroTextSub>
           </HeroTextBox>
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>
