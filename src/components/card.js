@@ -151,7 +151,6 @@ export default function Card(props) {
                             :
                             <A style={{display: 'none'}}></A>
                         }
-
                     </Buttons>
                 </CardBack>
             </Card>

@@ -31,7 +31,7 @@ export default [
         tech3: "NetlifyCMS",
         content: "Personal trainer website with access to all available services, including youth camps, adult training services, monthly newsletter, and meal plan/meal prep education.",
         image: `${trainingTIme}`,
-        gif: `${foreCardGif}`,
+        gif: `${trainingTIme}`,
         gitHub: "https://github.com/LaunchPad90/training-time",
         hosted: "https://trainingtime.netlify.app/"
     },
@@ -42,7 +42,7 @@ export default [
         tech3: "Prisma",
         content: "E-commerce site for small business in Spokane, WA. Focusing on the custom, hand made, decks with hopes to grow the business.",
         image: `${fb}`,
-        gif: `${foreCardGif}`,
+        gif: `${fb}`,
         gitHub: "https://github.com/LaunchPad90/fingerboards",
         hosted: "https://509fb.netlify.app/"
     },
