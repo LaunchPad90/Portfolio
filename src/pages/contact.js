@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 import Button from "../components/button";
 import media from "../styles/media"
 
@@ -93,7 +92,6 @@ export default function Contact(props) {
                     <Button type="submit">And awwwaaay we go!</Button>
                 </Form>
             </ContactPage>
-            <Footer />
         </Layout>
     )
 }

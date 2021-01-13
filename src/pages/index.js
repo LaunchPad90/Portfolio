@@ -7,7 +7,6 @@ import Projects from "../components/projects";
 import media from "../styles/media";
 
 import "../styles/global.css";
-import Footer from "../components/footer";
 
 export default function Home() {
   const moveInLeft = keyframes`
@@ -55,7 +54,7 @@ export default function Home() {
     justify-content: center;
 
     ${media.l`
-      height: 70vh;
+      height: 40vh;
     `}
   `;
 
@@ -78,7 +77,6 @@ export default function Home() {
 
     ${media.l`
       font-size: 4rem;
-      width: 100vw;
     `}
 
     ${media.s`
@@ -97,7 +95,7 @@ export default function Home() {
     ${media.l`
       font-size: 2rem;
       letter-spacing: .2rem;
-      width: 100vw;
+      padding: 3rem;
     `}
 
     ${media.s`
@@ -129,7 +127,6 @@ export default function Home() {
         </Hero>
         <ProjectHeader>View my Recent Work</ProjectHeader>
         <Projects />
-        <Footer />
       </Layout>
     </div>
   );

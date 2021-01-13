@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 import styled from "styled-components"
 import myImg from "../images/aboutMeSEI.webp"
 import media from "../styles/media"
@@ -54,7 +53,6 @@ export default function About() {
         <Photo />
         <Bio>After managing restaurants for the past 5 years, I understand how to strategically solve complex problems. I love working with people and helping achieve team success. When I’m not writing code, I love getting out early for a round of golf, trying new recipes in the kitchen, and playing games online with my friends. Let’s link up!</Bio>
       </AboutContainer>
-      <Footer />
     </Layout>
   )
 }

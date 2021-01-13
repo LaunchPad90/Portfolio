@@ -83,7 +83,7 @@ export default function Card(props) {
 
     const ContentList = styled.ul`
         height: 100%;
-        width: 40%;
+        width: 60%;
         margin-top: 1rem;
     `;
 
@@ -146,7 +146,12 @@ export default function Card(props) {
                             title={props.projectTitle}
                             hosted={props.hosted}
                         />
-                        <A href={props.gitHub} target="blank">View Code</A>
+                        {props.gitHub !== props.github ?
+                            <A href={props.gitHub} target="blank">View Code</A>
+                            :
+                            <A style={{display: 'none'}}></A>
+                        }
+
                     </Buttons>
                 </CardBack>
             </Card>
