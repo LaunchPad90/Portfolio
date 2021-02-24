@@ -129,25 +129,25 @@ export default function Card(props) {
         <CardBox>
             <Card onClick={Flipped}>
                 <CardFront>
-                    <CardImage projectImageSrc={props.projectImage} />
-                    <CardTitle>{props.projectTitle}</CardTitle>
+                    <CardImage projectImageSrc={props.p.image} />
+                    <CardTitle>{props.p.title}</CardTitle>
                     <ContentList>
-                        <ListItem>{props.projectTech1}</ListItem>
-                        <ListItem>{props.projectTech2}</ListItem>
-                        <ListItem>{props.projectTech3}</ListItem>
+                        <ListItem>{props.p.tech1}</ListItem>
+                        <ListItem>{props.p.tech2}</ListItem>
+                        <ListItem>{props.p.tech3}</ListItem>
                     </ContentList>
                     <Button>View More</Button>
                 </CardFront>
                 <CardBack>
-                    <CardContent>{props.projectContent}</CardContent>
+                    <CardContent>{props.p.content}</CardContent>
                     <Buttons>
                         <GifModal 
-                            gif={props.projectGif}
-                            title={props.projectTitle}
-                            hosted={props.hosted}
+                            gif={props.p.gif}
+                            title={props.p.title}
+                            hosted={props.p.hosted}
                         />
-                        {props.gitHub !== props.github ?
-                            <A href={props.gitHub} target="blank">View Code</A>
+                        {props.p.gitHub ?
+                            <A href={props.p.gitHub} target="blank">View Code</A>
                             :
                             <A style={{display: 'none'}}></A>
                         }

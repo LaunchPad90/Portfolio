@@ -19,17 +19,7 @@ export default function Projects(props) {
             {projectData.map(project => (
                 <div key={project.title}>
                     <Card 
-                        projectTitle={project.title}
-                        projectTech1={project.tech1}
-                        projectTech2={project.tech2}
-                        projectTech3={project.tech3}
-                        projectContent={project.content}
-                        projectImage={project.image}
-                        projectGif={project.gif}
-                        color1={project.color1}
-                        color2={project.color2}
-                        gitHub={project.gitHub}
-                        hosted={project.hosted}
+                        p={project}
                     />
                 </div>
             ))}
