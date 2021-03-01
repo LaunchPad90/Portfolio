@@ -38,7 +38,7 @@ export default function Footer() {
     `;
     return (
         <Div>
-            <FooterLink href="https://drive.google.com/file/d/1HBC9ee5anl3NaFXsqKK4k1eV-leOYfa_/view?usp=sharing" target="blank" className="resume">Resume <FaExternalLinkAlt style={{marginLeft: `.5rem`}} size={16}/></FooterLink>
+            <FooterLink href="https://drive.google.com/file/d/1o07tHyAslSnbv0x4IWUXnae9n4-F_3Eq/view?usp=sharing" target="blank" className="resume">Resume <FaExternalLinkAlt style={{marginLeft: `.5rem`}} size={16}/></FooterLink>
             <FooterLink href="https://www.linkedin.com/in/jacob-hickey-8140b4197/" target="blank" className="linkedin"><FaLinkedin size={18}/></FooterLink>
             <FooterLink href="https://github.com/LaunchPad90?tab=repositories" target="blank" className="github"><FaGithub size={18}/></FooterLink>
         </Div>
